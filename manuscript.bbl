@@ -1,0 +1,476 @@
+\begin{thebibliography}{67}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Techreport
+\bibitem[{{Atos}(2025)}]{Atos2025}
+\bibinfo{author}{{Atos}}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Vibe Coding and the Future of Enterprise
+  Development}.
+\newblock \bibinfo{type}{Technical Report}. Atos Digital Transformation Report.
+%Type = Techreport
+\bibitem[{{Boston Consulting Group}(2025)}]{BCG2025}
+\bibinfo{author}{{Boston Consulting Group}}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{From Potential to Profit: Closing the {AI} Impact
+  Gap}.
+\newblock \bibinfo{type}{Technical Report}. BCG Henderson Institute.
+%Type = Article
+\bibitem[{Breidbach et~al.(2024)Breidbach, Davern, Shanks and
+  Tian}]{Breidbach2024}
+\bibinfo{author}{Breidbach, C.F.}, \bibinfo{author}{Davern, M.},
+  \bibinfo{author}{Shanks, G.}, \bibinfo{author}{Tian, S.},
+  \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Orchestrating digital resilience: A socio-technical
+  perspective}.
+\newblock \bibinfo{journal}{European Journal of Information Systems}
+  \bibinfo{volume}{33}, \bibinfo{pages}{562--581}.
+%Type = Article
+\bibitem[{Browder(2024)}]{Browder2024}
+\bibinfo{author}{Browder, R.E.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Digital transformation as upgrading adaptation
+  promoting enterprise resilience}.
+\newblock \bibinfo{journal}{Strategic Entrepreneurship Journal}
+  \bibinfo{volume}{18}, \bibinfo{pages}{435--463}.
+%Type = Article
+\bibitem[{Browder et~al.(2019)Browder, Aldrich and Bradley}]{Browder2019}
+\bibinfo{author}{Browder, R.E.}, \bibinfo{author}{Aldrich, H.E.},
+  \bibinfo{author}{Bradley, S.W.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{The emergence of the maker movement: Implications for
+  entrepreneurship research}.
+\newblock \bibinfo{journal}{Journal of Business Venturing}
+  \bibinfo{volume}{34}, \bibinfo{pages}{459--476}.
+%Type = Article
+\bibitem[{Cabot(2020)}]{Cabot2020}
+\bibinfo{author}{Cabot, J.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Low-code development and model-driven engineering:
+  Two sides of the same coin?}
+\newblock \bibinfo{journal}{Software and Systems Modeling}
+  \bibinfo{volume}{19}, \bibinfo{pages}{1--8}.
+%Type = Techreport
+\bibitem[{Clancy(2014)}]{Clancy2014}
+\bibinfo{author}{Clancy, T.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{The {Standish Group} Chaos Report}.
+\newblock \bibinfo{type}{Technical Report}. Standish Group.
+  \bibinfo{address}{West Yarmouth, MA}.
+%Type = Techreport
+\bibitem[{{CodeRabbit}(2025)}]{CodeRabbit2025}
+\bibinfo{author}{{CodeRabbit}}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{The Security Impact of {AI} Co-Authored Code: A
+  Quantitative Analysis}.
+\newblock \bibinfo{type}{Research Report}. CodeRabbit.
+%Type = Misc
+\bibitem[{{Collins Dictionary}(2025)}]{Collins2025}
+\bibinfo{author}{{Collins Dictionary}}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Word of the year 2025: Vibe coding}.
+%Type = Article
+\bibitem[{Elo and Kyng{\"a}s(2008)}]{Elo2008}
+\bibinfo{author}{Elo, S.}, \bibinfo{author}{Kyng{\"a}s, H.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{The qualitative content analysis process}.
+\newblock \bibinfo{journal}{Journal of Advanced Nursing} \bibinfo{volume}{62},
+  \bibinfo{pages}{107--115}.
+\newblock \DOIprefix\doi{10.1111/j.1365-2648.2007.04569.x}.
+%Type = Techreport
+\bibitem[{{Everest Group}(2024)}]{Everest2024}
+\bibinfo{author}{{Everest Group}}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{The \$2.3 Trillion Digital Transformation Challenge}.
+\newblock \bibinfo{type}{Research Report}. Everest Group.
+%Type = Article
+\bibitem[{Fawzy et~al.(2025)Fawzy, Fahmy and Abdelfattah}]{Fawzy2025}
+\bibinfo{author}{Fawzy, A.}, \bibinfo{author}{Fahmy, M.A.},
+  \bibinfo{author}{Abdelfattah, A.S.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Vibe coding in practice: A grey literature review}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:2510.00328}
+  \bibinfo{note}{Accepted at ICSE 2026 SEIP Track}.
+%Type = Article
+\bibitem[{Fryling(2019)}]{Fryling2019}
+\bibinfo{author}{Fryling, M.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Low code app development}.
+\newblock \bibinfo{journal}{Journal of Computing Sciences in Colleges}
+  \bibinfo{volume}{34}, \bibinfo{pages}{119}.
+%Type = Article
+\bibitem[{Fuggetta(1993)}]{Fuggetta1993}
+\bibinfo{author}{Fuggetta, A.}, \bibinfo{year}{1993}.
+\newblock \bibinfo{title}{A classification of {CASE} technology}.
+\newblock \bibinfo{journal}{Computer Journal} \bibinfo{volume}{35},
+  \bibinfo{pages}{25--38}.
+\newblock \DOIprefix\doi{10.1093/comjnl/35.1.25}.
+%Type = Article
+\bibitem[{Garousi et~al.(2019)Garousi, Felderer and
+  M{\"a}ntyl{\"a}}]{Garousi2019}
+\bibinfo{author}{Garousi, V.}, \bibinfo{author}{Felderer, M.},
+  \bibinfo{author}{M{\"a}ntyl{\"a}, M.V.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Guidelines for including grey literature and
+  conducting multivocal literature reviews in software engineering}.
+\newblock \bibinfo{journal}{Information and Software Technology}
+  \bibinfo{volume}{106}, \bibinfo{pages}{101--121}.
+\newblock \DOIprefix\doi{10.1016/j.infsof.2018.09.006}.
+%Type = Techreport
+\bibitem[{{Gartner}(2025)}]{Gartner2025}
+\bibinfo{author}{{Gartner}}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Predicts 2025: Software Engineering}.
+\newblock \bibinfo{type}{Technical Report}. Gartner Research.
+%Type = Techreport
+\bibitem[{{Genpact}(2025)}]{Genpact2025}
+\bibinfo{author}{{Genpact}}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Navigating the Vibe Coding Revolution: Enterprise
+  Readiness Assessment}.
+\newblock \bibinfo{type}{Technical Report}. Genpact Insights.
+%Type = Book
+\bibitem[{Glover and Dudley(1991)}]{Glover1991}
+\bibinfo{author}{Glover, N.}, \bibinfo{author}{Dudley, T.},
+  \bibinfo{year}{1991}.
+\newblock \bibinfo{title}{Practical Error Correction Design for Engineers}.
+\newblock \bibinfo{publisher}{Data Systems Technology Corporation},
+  \bibinfo{address}{Reston, VA}.
+%Type = Techreport
+\bibitem[{{HCLTech}(2025)}]{HCLTech2025}
+\bibinfo{author}{{HCLTech}}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{{AI}-Powered Development: From Vibe Coding to
+  Enterprise Value}.
+\newblock \bibinfo{type}{Whitepaper}. HCLTech.
+%Type = Article
+\bibitem[{Heeks and Ospina(2019)}]{Heeks2019}
+\bibinfo{author}{Heeks, R.}, \bibinfo{author}{Ospina, A.V.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Conceptualising the link between information systems
+  and resilience: A developing country field study}.
+\newblock \bibinfo{journal}{Information Systems Journal} \bibinfo{volume}{29},
+  \bibinfo{pages}{70--96}.
+%Type = Article
+\bibitem[{Holling(1973)}]{Holling1973}
+\bibinfo{author}{Holling, C.S.}, \bibinfo{year}{1973}.
+\newblock \bibinfo{title}{Resilience and stability of ecological systems}.
+\newblock \bibinfo{journal}{Annual Review of Ecology and Systematics}
+  \bibinfo{volume}{4}, \bibinfo{pages}{1--23}.
+%Type = Article
+\bibitem[{Hsieh and Shannon(2005)}]{Hsieh2005}
+\bibinfo{author}{Hsieh, H.F.}, \bibinfo{author}{Shannon, S.E.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Three approaches to qualitative content analysis}.
+\newblock \bibinfo{journal}{Qualitative Health Research} \bibinfo{volume}{15},
+  \bibinfo{pages}{1277--1288}.
+\newblock \DOIprefix\doi{10.1177/1049732305276687}.
+%Type = Article
+\bibitem[{Huff(1992)}]{Huff1992}
+\bibinfo{author}{Huff, C.C.}, \bibinfo{year}{1992}.
+\newblock \bibinfo{title}{Elements of a realistic {CASE} tool adoption budget}.
+\newblock \bibinfo{journal}{Communications of the ACM} \bibinfo{volume}{35},
+  \bibinfo{pages}{45--55}.
+\newblock \DOIprefix\doi{10.1145/129617.129619}.
+%Type = Article
+\bibitem[{Iivari(1996)}]{Iivari1996}
+\bibinfo{author}{Iivari, J.}, \bibinfo{year}{1996}.
+\newblock \bibinfo{title}{Why are {CASE} tools not used?}
+\newblock \bibinfo{journal}{Communications of the ACM} \bibinfo{volume}{39},
+  \bibinfo{pages}{94--103}.
+\newblock \DOIprefix\doi{10.1145/236156.236183}.
+%Type = Inproceedings
+\bibitem[{Imai(2022)}]{Imai2022}
+\bibinfo{author}{Imai, S.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Is {GitHub Copilot} a substitute for human
+  pair-programming?}, in: \bibinfo{booktitle}{Proceedings of the ACM/IEEE 44th
+  International Conference on Software Engineering: Companion Proceedings}, pp.
+  \bibinfo{pages}{38--42}.
+%Type = Techreport
+\bibitem[{{International Data Corporation}(1996)}]{IDC1996}
+\bibinfo{author}{{International Data Corporation}}, \bibinfo{year}{1996}.
+\newblock \bibinfo{title}{{CASE} Tools Market Report}.
+\newblock \bibinfo{type}{Technical Report}. IDC.
+%Type = Misc
+\bibitem[{Karpathy(2025)}]{Karpathy2025}
+\bibinfo{author}{Karpathy, A.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Vibe coding [{X} post]}.
+\newblock \bibinfo{note}{X (formerly Twitter) post coining the term ``vibe
+  coding''}.
+%Type = Book
+\bibitem[{Krippendorff(2019)}]{Krippendorff2019}
+\bibinfo{author}{Krippendorff, K.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Content Analysis: An Introduction to Its
+  Methodology}.
+\newblock \bibinfo{edition}{4th} ed., \bibinfo{publisher}{Sage},
+  \bibinfo{address}{Thousand Oaks, CA}.
+%Type = Article
+\bibitem[{Lethbridge(2024)}]{Lethbridge2024}
+\bibinfo{author}{Lethbridge, C.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Low-code is often no-code: How citizen developers are
+  transforming enterprise {IT}}.
+\newblock \bibinfo{journal}{MIT Sloan Management Review} .
+%Type = Article
+\bibitem[{Li and Wang(2024)}]{Li2024}
+\bibinfo{author}{Li, X.}, \bibinfo{author}{Wang, Y.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Digital transformation and enterprise resilience:
+  Evidence from {China}}.
+\newblock \bibinfo{journal}{PLOS ONE} \bibinfo{volume}{19},
+  \bibinfo{pages}{e0298891}.
+%Type = Book
+\bibitem[{Lincoln and Guba(1985)}]{Lincoln1985}
+\bibinfo{author}{Lincoln, Y.S.}, \bibinfo{author}{Guba, E.G.},
+  \bibinfo{year}{1985}.
+\newblock \bibinfo{title}{Naturalistic Inquiry}.
+\newblock \bibinfo{publisher}{Sage}, \bibinfo{address}{Newbury Park, CA}.
+%Type = Article
+\bibitem[{Lundell and Lings(2004)}]{Lundell2004}
+\bibinfo{author}{Lundell, B.}, \bibinfo{author}{Lings, B.},
+  \bibinfo{year}{2004}.
+\newblock \bibinfo{title}{Changing perceptions of {CASE} technology}.
+\newblock \bibinfo{journal}{Journal of Systems and Software}
+  \bibinfo{volume}{72}, \bibinfo{pages}{271--280}.
+\newblock \DOIprefix\doi{10.1016/S0164-1212(03)00155-2}.
+%Type = Book
+\bibitem[{Mayring(2014)}]{Mayring2014}
+\bibinfo{author}{Mayring, P.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Qualitative Content Analysis: Theoretical Foundation,
+  Basic Procedures and Software Solution}.
+\newblock \bibinfo{publisher}{Sage}.
+%Type = Article
+\bibitem[{{McKinsey \& Company}(2023)}]{McKinsey2023agility}
+\bibinfo{author}{{McKinsey \& Company}}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{The agility advantage: How organizations can make
+  decisions faster}.
+\newblock \bibinfo{journal}{McKinsey Quarterly} .
+%Type = Techreport
+\bibitem[{{McKinsey \& Company}(2025)}]{McKinsey2025}
+\bibinfo{author}{{McKinsey \& Company}}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{The State of {AI}: How Organizations Are Rewiring to
+  Capture Value}.
+\newblock \bibinfo{type}{Technical Report}. McKinsey Global Survey.
+%Type = Book
+\bibitem[{Moore(2014)}]{Moore2014}
+\bibinfo{author}{Moore, G.A.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Crossing the Chasm: Marketing and Selling Disruptive
+  Products to Mainstream Customers}.
+\newblock \bibinfo{edition}{3rd} ed., \bibinfo{publisher}{Harper Business},
+  \bibinfo{address}{New York}.
+%Type = Article
+\bibitem[{Nicmanis(2024)}]{Nicmanis2024}
+\bibinfo{author}{Nicmanis, J.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Reflexivity in qualitative content analysis: A guide
+  for researchers}.
+\newblock \bibinfo{journal}{Qualitative Research} \bibinfo{volume}{24},
+  \bibinfo{pages}{89--107}.
+%Type = Article
+\bibitem[{Orlikowski(1993)}]{Orlikowski1993}
+\bibinfo{author}{Orlikowski, W.J.}, \bibinfo{year}{1993}.
+\newblock \bibinfo{title}{{CASE} tools as organizational change: Investigating
+  incremental and radical changes in systems development}.
+\newblock \bibinfo{journal}{MIS Quarterly} \bibinfo{volume}{17},
+  \bibinfo{pages}{309--340}.
+\newblock \DOIprefix\doi{10.2307/249774}.
+%Type = Techreport
+\bibitem[{{OutSystems}(2019)}]{OutSystems2019}
+\bibinfo{author}{{OutSystems}}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{The State of Application Development: Is {IT} Ready
+  for Disruption?}
+\newblock \bibinfo{type}{Technical Report}. OutSystems.
+  \bibinfo{address}{Boston, MA}.
+%Type = Book
+\bibitem[{Pressman and Maxim(2020)}]{Pressman2020}
+\bibinfo{author}{Pressman, R.S.}, \bibinfo{author}{Maxim, B.R.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Software Engineering: A Practitioner's Approach}.
+\newblock \bibinfo{edition}{9th} ed., \bibinfo{publisher}{McGraw-Hill},
+  \bibinfo{address}{New York}.
+%Type = Techreport
+\bibitem[{Richardson and Rymer(2014)}]{Richardson2014}
+\bibinfo{author}{Richardson, C.}, \bibinfo{author}{Rymer, J.R.},
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{New Development Platforms Emerge for Customer-Facing
+  Applications}.
+\newblock \bibinfo{type}{Technical Report}. Forrester.
+  \bibinfo{address}{Cambridge, MA}.
+%Type = Techreport
+\bibitem[{Richardson and Rymer(2016)}]{Richardson2016}
+\bibinfo{author}{Richardson, C.}, \bibinfo{author}{Rymer, J.R.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Vendor Landscape: The Fractured, Fertile Terrain of
+  Low-Code Application Platforms}.
+\newblock \bibinfo{type}{Technical Report}. Forrester.
+  \bibinfo{address}{Cambridge, MA}.
+%Type = Book
+\bibitem[{Rogers(2003)}]{Rogers2003}
+\bibinfo{author}{Rogers, E.M.}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{Diffusion of Innovations}.
+\newblock \bibinfo{edition}{5th} ed., \bibinfo{publisher}{Free Press},
+  \bibinfo{address}{New York}.
+%Type = Techreport
+\bibitem[{Rymer and Koplowitz(2019)}]{Rymer2019}
+\bibinfo{author}{Rymer, J.R.}, \bibinfo{author}{Koplowitz, R.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{The {Forrester Wave}: Low-Code Development Platforms
+  for {AD\&D} Professionals, {Q1} 2019}.
+\newblock \bibinfo{type}{Technical Report}. Forrester.
+  \bibinfo{address}{Cambridge, MA}.
+%Type = Inproceedings
+\bibitem[{Sahay et~al.(2020)Sahay, Indamutsa, Di~Ruscio and
+  Pierantonio}]{Sahay2020}
+\bibinfo{author}{Sahay, A.}, \bibinfo{author}{Indamutsa, A.},
+  \bibinfo{author}{Di~Ruscio, D.}, \bibinfo{author}{Pierantonio, A.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Supporting the understanding and comparison of
+  low-code development platforms}, in: \bibinfo{booktitle}{Proceedings of the
+  46th Euromicro Conference on Software Engineering and Advanced Applications
+  (SEAA)}, \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{171--178}.
+%Type = Article
+\bibitem[{Sanchis et~al.(2020)Sanchis, Garc{\'\i}a-Perales, Fraile and
+  Poler}]{Sanchis2020}
+\bibinfo{author}{Sanchis, R.}, \bibinfo{author}{Garc{\'\i}a-Perales, {\'O}.},
+  \bibinfo{author}{Fraile, F.}, \bibinfo{author}{Poler, R.},
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Low-code as enabler of digital transformation in
+  manufacturing industry}.
+\newblock \bibinfo{journal}{Applied Sciences} \bibinfo{volume}{10},
+  \bibinfo{pages}{12}.
+\newblock \DOIprefix\doi{10.3390/app10010012}.
+%Type = Article
+\bibitem[{Sanchis and Poler(2019)}]{Sanchis2019}
+\bibinfo{author}{Sanchis, R.}, \bibinfo{author}{Poler, R.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Enterprise resilience assessment---a quantitative
+  approach}.
+\newblock \bibinfo{journal}{Sustainability} \bibinfo{volume}{11},
+  \bibinfo{pages}{4327}.
+\newblock \DOIprefix\doi{10.3390/su11164327}.
+%Type = Techreport
+\bibitem[{Shmargad(2025)}]{Shmargad2025}
+\bibinfo{author}{Shmargad, J.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Vibe Coding Comes to the Enterprise}.
+\newblock \bibinfo{type}{Technical Report}. Forrester Research.
+%Type = Techreport
+\bibitem[{{Stack Overflow}(2025)}]{StackOverflow2025}
+\bibinfo{author}{{Stack Overflow}}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{2025 Developer Survey Results}.
+\newblock \bibinfo{type}{Technical Report}. Stack Overflow.
+%Type = Inproceedings
+\bibitem[{Strubell et~al.(2019)Strubell, Ganesh and McCallum}]{Strubell2019}
+\bibinfo{author}{Strubell, E.}, \bibinfo{author}{Ganesh, A.},
+  \bibinfo{author}{McCallum, A.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Energy and policy considerations for deep learning in
+  {NLP}}, in: \bibinfo{booktitle}{Proceedings of the 57th Annual Meeting of the
+  Association for Computational Linguistics}, pp. \bibinfo{pages}{3645--3650}.
+%Type = Article
+\bibitem[{Tabrizi et~al.(2019)Tabrizi, Lam, Girard and Irvin}]{Tabrizi2019}
+\bibinfo{author}{Tabrizi, B.}, \bibinfo{author}{Lam, E.},
+  \bibinfo{author}{Girard, K.}, \bibinfo{author}{Irvin, V.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Digital transformation is not about technology}.
+\newblock \bibinfo{journal}{Harvard Business Review} \bibinfo{note}{March 13,
+  2019}.
+%Type = Article
+\bibitem[{Teece(2018)}]{Teece2018}
+\bibinfo{author}{Teece, D.J.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Business models and dynamic capabilities}.
+\newblock \bibinfo{journal}{Long Range Planning} \bibinfo{volume}{51},
+  \bibinfo{pages}{40--49}.
+%Type = Article
+\bibitem[{Teece et~al.(1997)Teece, Pisano and Shuen}]{Teece1997}
+\bibinfo{author}{Teece, D.J.}, \bibinfo{author}{Pisano, G.},
+  \bibinfo{author}{Shuen, A.}, \bibinfo{year}{1997}.
+\newblock \bibinfo{title}{Dynamic capabilities and strategic management}.
+\newblock \bibinfo{journal}{Strategic Management Journal} \bibinfo{volume}{18},
+  \bibinfo{pages}{509--533}.
+\newblock
+  \DOIprefix\doi{10.1002/(SICI)1097-0266(199708)18:7<509::AID-SMJ882>3.0.CO;2-Z}.
+%Type = Misc
+\bibitem[{Tisi et~al.(2019)Tisi, Mottu, Kolovos, De~Lara, Guerra, Di~Ruscio,
+  Pierantonio and Wimmer}]{Tisi2019}
+\bibinfo{author}{Tisi, M.}, \bibinfo{author}{Mottu, J.M.},
+  \bibinfo{author}{Kolovos, D.}, \bibinfo{author}{De~Lara, J.},
+  \bibinfo{author}{Guerra, E.}, \bibinfo{author}{Di~Ruscio, D.},
+  \bibinfo{author}{Pierantonio, A.}, \bibinfo{author}{Wimmer, M.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Lowcomote: Training the next generation of experts in
+  scalable low-code engineering platforms}.
+\newblock \bibinfo{note}{Available online:
+  \url{https://www.se.jku.at/lowcomote-training-the-next-generation-of-experts-in-scalable-low-code-engineering-platforms/}}.
+%Type = Book
+\bibitem[{Tornatzky and Fleischer(1990)}]{Tornatzky1990}
+\bibinfo{author}{Tornatzky, L.G.}, \bibinfo{author}{Fleischer, M.},
+  \bibinfo{year}{1990}.
+\newblock \bibinfo{title}{The Processes of Technological Innovation}.
+\newblock \bibinfo{publisher}{Lexington Books}, \bibinfo{address}{Lexington,
+  MA}.
+%Type = Misc
+\bibitem[{Tyndall(2010)}]{Tyndall2010}
+\bibinfo{author}{Tyndall, D.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{{AACODS} checklist for appraising grey literature}.
+%Type = Misc
+\bibitem[{{Various Authors}(2025a)}]{Reddit2025}
+\bibinfo{author}{{Various Authors}}, \bibinfo{year}{2025}a.
+\newblock \bibinfo{title}{r/programming: Vibe coding discussion threads}.
+\newblock \bibinfo{note}{Reddit}.
+%Type = Article
+\bibitem[{{Various Authors}(2025b)}]{SurveyVibeCoding2025}
+\bibinfo{author}{{Various Authors}}, \bibinfo{year}{2025}b.
+\newblock \bibinfo{title}{Survey of vibe coding with large language models}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:2510.12399} .
+%Type = Article
+\bibitem[{{Various Authors}(2025c)}]{VibeCodingAINative2025}
+\bibinfo{author}{{Various Authors}}, \bibinfo{year}{2025}c.
+\newblock \bibinfo{title}{Vibe coding: {AI}-native paradigm}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:2510.17842} .
+%Type = Misc
+\bibitem[{{Various Authors}(2025d)}]{DEVCommunity2025}
+\bibinfo{author}{{Various Authors}}, \bibinfo{year}{2025}d.
+\newblock \bibinfo{title}{Vibe coding: Democratization or disaster?}
+\newblock \bibinfo{note}{DEV Community}.
+%Type = Article
+\bibitem[{{Various Authors}(2025e)}]{VibeCodingFlowDebt2025}
+\bibinfo{author}{{Various Authors}}, \bibinfo{year}{2025}e.
+\newblock \bibinfo{title}{Vibe coding: Flow, technical debt, and guidelines}.
+\newblock \bibinfo{journal}{arXiv preprint arXiv:2512.11922} .
+%Type = Techreport
+\bibitem[{{Veracode}(2025)}]{Veracode2025}
+\bibinfo{author}{{Veracode}}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{State of Software Security: The Rise of
+  {AI}-Generated Code}.
+\newblock \bibinfo{type}{Annual Report}. Veracode.
+%Type = Article
+\bibitem[{Vial(2019)}]{Vial2019}
+\bibinfo{author}{Vial, G.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Understanding digital transformation: A review and a
+  research agenda}.
+\newblock \bibinfo{journal}{The Journal of Strategic Information Systems}
+  \bibinfo{volume}{28}, \bibinfo{pages}{118--144}.
+\newblock \DOIprefix\doi{10.1016/j.jsis.2019.01.003}.
+%Type = Article
+\bibitem[{Warner and W{\"a}ger(2019)}]{Warner2019}
+\bibinfo{author}{Warner, K.S.R.}, \bibinfo{author}{W{\"a}ger, M.},
+  \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Building dynamic capabilities for digital
+  transformation: An ongoing process of strategic renewal}.
+\newblock \bibinfo{journal}{Long Range Planning} \bibinfo{volume}{52},
+  \bibinfo{pages}{326--349}.
+\newblock \DOIprefix\doi{10.1016/j.lrp.2018.12.001}.
+%Type = Misc
+\bibitem[{Willison(2025)}]{Willison2025}
+\bibinfo{author}{Willison, S.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Not all {AI}-assisted programming is vibe coding}.
+\newblock \bibinfo{note}{Simon Willison's Weblog}.
+%Type = Misc
+\bibitem[{{Y Combinator}(2025)}]{YCombinator2025}
+\bibinfo{author}{{Y Combinator}}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{{W2025} batch demographics and technology trends}.
+\newblock \bibinfo{note}{Y Combinator Blog}.
+%Type = Inproceedings
+\bibitem[{Ziegler et~al.(2022)Ziegler, Kalliamvakou, Li, Rice, Rifkin,
+  Simister, Sittampalam and Aftandilian}]{Ziegler2022}
+\bibinfo{author}{Ziegler, A.}, \bibinfo{author}{Kalliamvakou, E.},
+  \bibinfo{author}{Li, X.A.}, \bibinfo{author}{Rice, A.},
+  \bibinfo{author}{Rifkin, D.}, \bibinfo{author}{Simister, S.},
+  \bibinfo{author}{Sittampalam, G.}, \bibinfo{author}{Aftandilian, E.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Productivity assessment of neural code completion},
+  in: \bibinfo{booktitle}{Proceedings of the 6th ACM SIGPLAN International
+  Symposium on Machine Programming}, pp. \bibinfo{pages}{21--29}.
+
+\end{thebibliography}

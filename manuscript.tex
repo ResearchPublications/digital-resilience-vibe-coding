@@ -1,0 +1,590 @@
+%% Manuscript for Technological Forecasting and Social Change (Elsevier)
+%% Using elsarticle document class — the official Elsevier template
+%% Reference style: numbered (elsarticle-num)
+%%
+\documentclass[preprint,12pt,authoryear]{elsarticle}
+
+%% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{adjustbox}
+\usepackage{enumitem}
+\usepackage{lineno}
+\usepackage{float}
+
+%% Line numbers for review
+\modulolinenumbers[5]
+
+%% Journal name
+\journal{Technological Forecasting and Social Change}
+
+%% ---------------------------------------------------------------
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Building Digital Resilience Through Vibe Coding: A Content Analysis of AI-Assisted Development for Sustainable Digital Transformation}
+
+%% Authors — placeholders for submission
+\author[inst1]{First Author\corref{cor1}}
+\ead{first.author@university.edu}
+\author[inst1]{Second Author}
+\author[inst2]{Third Author}
+
+\cortext[cor1]{Corresponding author.}
+
+\affiliation[inst1]{organization={Department of Information Systems, University Name},
+  city={City},
+  country={Country}}
+\affiliation[inst2]{organization={School of Business, University Name},
+  city={City},
+  country={Country}}
+
+%% Abstract
+\begin{abstract}
+Digital transformation remains a strategic imperative for organizations worldwide, yet approximately 70\% of initiatives fail, costing an estimated \$2.3 trillion annually. Traditional software development is expensive (\$434K--\$2.3M per project), slow, and constrained by scarce technical talent. While low-code development platforms emerged as a partial solution---accelerating development 5--10$\times$ and enabling citizen developer participation---they introduced vendor lock-in, scalability constraints, and platform fragmentation. In February 2025, Andrej Karpathy coined the term ``vibe coding'' to describe a radically new AI-assisted programming paradigm in which developers describe desired functionality in natural language and accept AI-generated code, often without full comprehension of the output. Within one year, 87\% of Fortune 500 companies adopted at least one vibe coding platform, and the term was named Collins Dictionary Word of the Year 2025. Despite this rapid adoption, no theoretically grounded academic study has investigated how vibe coding contributes to organizational digital transformation and resilience across business sectors. This paper addresses this gap through a directed content analysis of 97 sources spanning academic literature, industry reports, developer community discourse, and platform documentation. Using an integrated theoretical lens combining Dynamic Capabilities Theory, the Technology-Organization-Environment (TOE) framework, and Diffusion of Innovation (DOI) Theory, we systematically analyze vibe coding's role in enabling digital transformation and building---or undermining---organizational digital resilience. Our findings reveal a ``resilience paradox'': vibe coding simultaneously strengthens organizational resilience through accelerated sensing, seizing, and transforming capabilities while introducing novel fragilities including security vulnerabilities (present in 45\% of AI-generated code), technical debt accumulation, and a ``vulnerable developer'' phenomenon affecting 63\% of vibe coding practitioners. We extend Sanchis et al.'s (2020) low-code/manufacturing framework to the vibe coding era and broader business contexts, provide a comparative analysis of low-code versus vibe coding paradigms, and propose a governance framework for sustainable vibe coding adoption. The paper concludes with a forecasting analysis positioning vibe coding on the technology adoption lifecycle and identifying critical factors that will determine whether it achieves sustainable mainstream enterprise adoption or follows the trajectory of earlier automation paradigms such as CASE tools.
+\end{abstract}
+
+\begin{keyword}
+vibe coding \sep digital transformation \sep digital resilience \sep AI-assisted development \sep low-code \sep dynamic capabilities \sep content analysis
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+%% ====================================================================
+\section{Introduction}
+\label{sec:introduction}
+%% ====================================================================
+
+Enterprises operate in an environment of accelerating complexity and disruption. The increasing intensity of global competition, rapid technological change, and volatile market conditions demand that organizations build digital capabilities at unprecedented speed \citep{Sanchis2020, Sanchis2019}. Digital transformation---the integration of digital technologies into all areas of business, fundamentally changing how organizations operate and deliver value---has become a strategic imperative rather than an option \citep{Vial2019}. Yet the track record is sobering: approximately 70\% of digital transformation initiatives fail to achieve their objectives \citep{Tabrizi2019}, costing organizations an estimated \$2.3 trillion annually in unrealized value \citep{Everest2024}. A fundamental bottleneck lies in software development itself. Traditional development remains expensive, with project costs ranging from \$434,000 for small and medium-sized enterprises to \$2,322,000 for larger projects \citep{Fryling2019, Clancy2014}. Development cycles measured in months or years are increasingly misaligned with the pace at which organizations must respond to market shifts and competitive threats.
+
+The quest to democratize and accelerate software development is not new. In the late 1980s, Computer-Aided Software Engineering (CASE) tools promised to automate significant portions of the development lifecycle. The CASE market grew to \$12.11 billion by 1995, yet 73.5\% of companies never adopted these tools \citep{IDC1996, Iivari1996}. Unrealistic expectations, conceptual gaps between tool designers and users, high training costs, and the overestimation of productivity gains all contributed to CASE's failure to achieve mainstream adoption \citep{Iivari1996, Huff1992}. Two decades later, low-code development platforms (LCDPs) emerged as a more accessible alternative. Coined by Forrester Research in 2014 \citep{Richardson2014}, ``low-code'' describes platforms that enable application development through visual drag-and-drop interfaces, pre-built modules, and minimal hand-coding. \citet{Sanchis2020} demonstrated that low-code platforms can serve as enablers of digital transformation in manufacturing, offering rapidity (5--10$\times$ faster development), cost reduction, citizen developer involvement, and simplified maintenance. However, their analysis also revealed significant limitations: scalability constraints for enterprise-grade applications, fragmentation across vendors, restriction to software-only systems, and substantial vendor lock-in \citep{Sanchis2020, Tisi2019}.
+
+In February 2025, a new paradigm emerged that would fundamentally reshape this trajectory. Andrej Karpathy, co-founder of OpenAI and former Director of AI at Tesla, posted on X (formerly Twitter): ``There's a new kind of coding I call `vibe coding,' where you fully give in to the vibes, embrace exponentials, and forget that the code even exists'' \citep{Karpathy2025}. Karpathy described a practice of using large language models (LLMs) to generate entire codebases from natural language prompts, accepting the output largely without detailed review, and iterating through error messages by copying them back into the AI. Within twelve months of this coinage, vibe coding catalyzed a paradigm shift of remarkable velocity. The term was named Collins Dictionary Word of the Year 2025 \citep{Collins2025}. Industry surveys reported that 92\% of U.S.\ developers use AI coding tools daily, with 62\% reporting productivity gains of 25\% or more \citep{StackOverflow2025}. Gartner predicted that 60\% of new code would be AI-generated by 2026 \citep{Gartner2025}. Perhaps most strikingly, 87\% of Fortune 500 companies adopted at least one vibe coding platform, and 25\% of Y Combinator's Winter 2025 cohort reported running codebases that were 95\% AI-generated \citep{Shmargad2025, YCombinator2025}.
+
+Despite this extraordinary adoption velocity, there is a significant gap in academic understanding. While substantial research exists on low-code platforms and digital transformation \citep{Sanchis2020, Sahay2020, Cabot2020}, AI coding tools and developer productivity \citep{Ziegler2022, Imai2022}, and organizational resilience frameworks \citep{Sanchis2019, Browder2019}, there is virtually no theoretically grounded academic research investigating how vibe coding contributes to digital transformation and organizational resilience across business sectors. Existing vibe coding research---primarily arXiv preprints and a grey literature review accepted at ICSE 2026 \citep{Fawzy2025}---focuses overwhelmingly on individual developer productivity metrics and code quality, not on organizational-level resilience outcomes or cross-industry digital transformation impacts.
+
+This paper addresses this gap through a directed content analysis \citep{Hsieh2005} investigating how vibe coding enables digital transformation and builds digital resilience across business sectors. We extend \citeauthor{Sanchis2020}'s (\citeyear{Sanchis2020}) low-code/manufacturing framework to the vibe coding era and broader business contexts, providing the first theoretically grounded, cross-industry analysis of vibe coding's organizational impact. Our analysis is structured through an integrated theoretical lens combining Dynamic Capabilities Theory \citep{Teece1997, Warner2019}, the Technology-Organization-Environment (TOE) framework \citep{Tornatzky1990}, and the Diffusion of Innovation (DOI) Theory \citep{Rogers2003}, enabling us to examine not only what vibe coding enables but also how it diffuses across organizations and what organizational capabilities it enhances or diminishes.
+
+Specifically, this study addresses three research questions:
+
+\begin{itemize}[leftmargin=2em]
+  \item[\textbf{RQ1:}] What is the current state of discourse on vibe coding as a paradigm for enabling digital transformation across business sectors?
+  \item[\textbf{RQ2:}] How does vibe coding contribute to (or hinder) organizational digital resilience compared to traditional low-code/no-code approaches?
+  \item[\textbf{RQ3:}] What are the enabling factors, barriers, and sustainability implications of vibe coding adoption for digital transformation?
+\end{itemize}
+
+By answering these questions, this paper makes three primary contributions. First, it provides the first systematic, multi-source content analysis of vibe coding's organizational-level impact, synthesizing fragmented discourse across academic, industry, practitioner, and platform documentation sources. Second, it introduces the concept of the ``resilience paradox''---the finding that vibe coding simultaneously strengthens and weakens organizational digital resilience---and theorizes this tension through the lens of Dynamic Capabilities. Third, it offers practical governance frameworks and forecasting analysis relevant to organizational decision-makers navigating the vibe coding paradigm shift, positioning this work squarely within the anticipatory and futures-oriented tradition of \emph{Technological Forecasting and Social Change}.
+
+
+%% ====================================================================
+\section{Background and Theoretical Framework}
+\label{sec:background}
+%% ====================================================================
+
+\subsection{The Evolution of Software Development Automation}
+
+The automation of software development has followed a punctuated evolutionary trajectory, with each paradigm shift promising to democratize development, reduce costs, and accelerate delivery. Understanding this historical evolution is essential for contextualizing vibe coding's emergence and forecasting its trajectory.
+
+\subsubsection{CASE Tools (1980s--1990s)}
+
+Computer-Aided Software Engineering (CASE) emerged in the late 1980s as the first systematic attempt to automate the software development lifecycle. CASE technology encompasses a collection of automated tools and methods that assist software engineering across its phases \citep{Glover1991}, including editing tools, programming tools, code generators, verification and validation tools, configuration management systems, and project management tools \citep{Fuggetta1993}. \citet{Fuggetta1993} classified CASE products into three categories: individual tools supporting specific tasks, workbenches integrating multiple tools for specific activities, and environments providing holistic toolkits supporting the entire software process.
+
+The CASE market demonstrated significant commercial interest, generating revenues that grew to \$12.11 billion by 1995 \citep{Sanchis2020}. However, adoption rates were dramatically disappointing. \citet{Iivari1996} found that 73.5\% of companies never adopted CASE tools, concluding that the productivity and quality benefits were ``overrated'' and that complexity was a ``significant, negatively related predictor of CASE effectiveness.'' \citet{Lundell2004} identified that the conceptual gap between tool designers and end users was a primary barrier. \citet{Huff1992} demonstrated that training costs often exceeded the original tool purchase price. \citet{Orlikowski1993} found that benefits did not accrue homogeneously, leading to internal resistance. These failures offer critical lessons: technological sophistication alone does not guarantee adoption, and unrealistic expectations can doom even promising paradigms.
+
+\subsubsection{Low-Code/No-Code Platforms (2014--Present)}
+
+The term ``low-code'' was first coined by Forrester Research in 2014 \citep{Richardson2014} to describe platforms that enable application development through visual interfaces, pre-built components, and minimal hand-coding. Unlike CASE tools, which primarily assisted professional developers, low-code platforms explicitly targeted a broader user base including ``citizen developers''---business professionals without formal programming training \citep{OutSystems2019}. \citet{Richardson2016} identified low-code platforms as providing useful solutions for automating and accelerating application delivery.
+
+\citet{Sanchis2020} systematically documented the benefits of low-code platforms: (a)~privacy---applications can be developed internally without outsourcing; (b)~rapidity---Forrester surveys showed 5--10$\times$ acceleration in development speed \citep{Richardson2016}; (c)~cost reduction---shorter development cycles directly reduce project costs; (d)~complexity reduction---apps are configured rather than coded from scratch; (e)~easy maintenance---minimal code means minimal maintenance burden; (f)~involvement of business profiles---44\% of low-code platform users are business users collaborating with IT \citep{OutSystems2019}; and (g)~minimization of unstable requirements---rapid iteration enables faster validation of ideas. The State of Application Development report \citep{OutSystems2019} found that 66\% of respondents cited ``accelerate digital transformation'' as their primary motivation for adopting low-code platforms.
+
+However, significant limitations persist. \citet{Tisi2019} identified three critical constraints: scalability (low-code platforms are primarily suited for small applications, not enterprise-grade systems), fragmentation (different vendors implement different paradigms with limited interoperability), and restriction to software-only systems (manufacturing and IoT use cases requiring hardware integration are poorly served). By 2025, the low-code market had grown substantially---Forrester projected total spending of \$21.2 billion \citep{Rymer2019}---yet these fundamental limitations continued to constrain its role in enterprise digital transformation.
+
+\subsubsection{Vibe Coding (2025--Present)}
+
+On February 2, 2025, Andrej Karpathy introduced ``vibe coding'' as a practice where developers describe desired functionality in natural language, allow LLMs to generate complete code, and ``accept all'' without necessarily comprehending every line of output \citep{Karpathy2025}. The defining characteristics of vibe coding, as synthesized from subsequent literature, include: (a)~natural language as the primary development interface \citep{Fawzy2025, SurveyVibeCoding2025}; (b)~AI-generated code as the primary output in standard programming languages rather than platform-specific configurations \citep{VibeCodingAINative2025}; (c)~an ``accept all'' mentality \citep{Karpathy2025, Fawzy2025}; (d)~iterative error resolution through AI \citep{SurveyVibeCoding2025}; and (e)~code that may exceed developer comprehension \citep{Karpathy2025, VibeCodingFlowDebt2025}.
+
+The vibe coding ecosystem rapidly matured around several key platforms: Cursor (an AI-native code editor), Replit (cloud-based IDE with AI), Claude Code (Anthropic's command-line AI tool), GitHub Copilot (comprehensive AI coding assistant), and newer platforms including v0.dev, Bolt, and Lovable that specifically target non-developers \citep{Fawzy2025, VibeCodingAINative2025}.
+
+\citet{Willison2025} introduced an important distinction between ``vibe coding'' and what he termed ``vibe engineering''---the practice of using AI coding tools while maintaining full accountability, conducting code reviews, writing tests, and ensuring comprehension of the output. This distinction highlights a spectrum of AI-assisted development practices with significant implications for code quality, security, and organizational resilience.
+
+Current adoption statistics underscore the paradigm's momentum. A 2025 Stack Overflow survey found that 92\% of U.S.\ developers use AI coding tools daily \citep{StackOverflow2025}. Gartner predicted that by 2028, 75\% of enterprise software engineers would use AI coding assistants \citep{Gartner2025}. \citet{McKinsey2025} indicated that 88\% of organizations report regular AI use across functions. Yet caution is warranted: \citet{BCG2025} found that 60\% of organizations generate no material value from their AI investments, suggesting that adoption does not automatically translate to organizational benefit.
+
+
+\subsection{Digital Transformation and Organizational Resilience}
+\label{sec:resilience}
+
+\subsubsection{Enterprise and Digital Resilience}
+
+Enterprise resilience has been defined as the capacity to prevent, anticipate, change, and adapt to changing environments \citep{Sanchis2019}. In the digital context, \citet{Heeks2019} defined digital resilience as ``the capabilities developed through digital technologies to absorb shocks, adapt, and transform in the face of adverse change.'' This conceptualization encompasses three progressive stages: anticipation (detecting threats and opportunities early), coping (maintaining operations during disruption), and adaptation (learning and transforming in response to change) \citep{Heeks2019, Holling1973}.
+
+The relationship between digital transformation and resilience is increasingly well-documented. \citet{Browder2024} characterized digital transformation as ``upgrading adaptation''---an investment that enhances an organization's capacity to respond to future disruptions. \citet{Li2024} demonstrated empirically that digital transformation positively influences enterprise resilience. \citet{Breidbach2024} introduced the concept of ``orchestrating digital resilience,'' emphasizing the active role of organizational decision-making. McKinsey research indicates that agile organizations make decisions 50\% faster than their peers \citep{McKinsey2023agility}, directly linking development speed to organizational resilience.
+
+\subsubsection{Rapid Development Capability as a Resilience Enabler}
+
+A critical but under-theorized link exists between software development speed and organizational resilience. When organizations can build, test, and deploy digital solutions rapidly, they gain the ability to: (a)~detect market opportunities and threats through rapid prototyping and MVP testing; (b)~respond to disruptions by building digital solutions in days rather than months; and (c)~continuously adapt their digital infrastructure as conditions change. This positions development capability---specifically, the speed and accessibility of software creation---as a direct enabler of digital resilience. Both low-code platforms and vibe coding dramatically compress development timelines, but through fundamentally different mechanisms \citep{Sanchis2020, Fawzy2025}.
+
+
+\subsection{Theoretical Lens}
+\label{sec:theory}
+
+This study employs an integrated multi-theory framework combining Dynamic Capabilities Theory, the TOE framework, and DOI Theory. This integration is necessary because no single theory adequately captures both the adoption dynamics and the organizational impact of vibe coding on digital resilience.
+
+\subsubsection{Dynamic Capabilities Theory}
+
+\citet{Teece1997} defined dynamic capabilities as ``the firm's ability to integrate, build, and reconfigure internal and external competences to address rapidly changing environments.'' \citet{Warner2019} extended this framework to the digital transformation context, identifying nine digitally based microfoundations underpinning three core capability clusters:
+
+\begin{itemize}
+  \item \textbf{Sensing:} The capacity to detect opportunities and threats. Vibe coding enhances sensing by enabling rapid prototyping (hours instead of months), allowing organizations to test market hypotheses at dramatically lower cost and higher speed \citep{Warner2019, Teece2018}.
+  \item \textbf{Seizing:} The capacity to mobilize resources to capture value from opportunities. Vibe coding compresses time-to-market from months to days or hours, enabling organizations to capture value before competitors \citep{Teece1997, Warner2019}.
+  \item \textbf{Transforming:} The capacity to reconfigure organizational assets and structures. Vibe coding empowers citizen developers, fundamentally reconfiguring the boundary between IT and business functions \citep{Warner2019, Lethbridge2024}.
+\end{itemize}
+
+\subsubsection{Technology-Organization-Environment (TOE) Framework}
+
+\citeauthor{Tornatzky1990}'s (\citeyear{Tornatzky1990}) TOE framework structures the analysis of technology adoption factors across three contexts: \emph{technology context} (LLM capability maturity, tool accessibility, code quality trade-offs, integration capabilities); \emph{organizational context} (existing digital maturity, AI culture and readiness, management support, governance structures); and \emph{environmental context} (competitive pressure, industry-specific regulations, talent market dynamics, vendor ecosystem evolution).
+
+\subsubsection{Diffusion of Innovation (DOI) Theory}
+
+\citeauthor{Rogers2003}'s (\citeyear{Rogers2003}) DOI theory identifies five innovation characteristics that influence adoption rates. Vibe coding exhibits: exceptional \emph{relative advantage} (60--80\% faster prototyping, substantial cost reduction); high \emph{compatibility} with human communication patterns but low compatibility with engineering practices; near-zero \emph{complexity} (natural language interface); high \emph{trialability} (free/low-cost tools); and high \emph{observability} (working prototypes in hours). Based on current adoption patterns, vibe coding appears to be transitioning from the ``early adopters'' to the ``early majority'' stage of Rogers' diffusion curve \citep{Rogers2003}.
+
+\subsubsection{Integrated Conceptual Model}
+
+Our integrated model posits that vibe coding adoption (driven by TOE and DOI factors) enhances organizational dynamic capabilities (sensing, seizing, transforming), which in turn produce digital resilience outcomes (anticipation, coping, adaptation). This relationship is moderated by industry sector, organizational size, existing digital maturity, and governance maturity. Critically, the model also identifies sustainability tensions that may undermine resilience outcomes. Fig.~\ref{fig:conceptual-model} presents this integrated conceptual model.
+
+\begin{figure}[htbp]
+\centering
+\small
+\setlength{\fboxsep}{8pt}
+\fbox{%
+\begin{minipage}{0.92\textwidth}
+\begin{center}
+\textbf{Integrated Conceptual Model}
+\end{center}
+\vspace{0.5em}
+\begin{tabular}{@{}p{0.29\textwidth}cp{0.29\textwidth}cp{0.29\textwidth}@{}}
+\textbf{Vibe Coding Adoption} \newline (TOE + DOI Factors) &
+$\longrightarrow$ &
+\textbf{Enhanced Dynamic Capabilities} \newline (Sensing, Seizing, Transforming) &
+$\longrightarrow$ &
+\textbf{Digital Resilience Outcomes} \newline (Anticipation, Coping, Adaptation) \\
+\end{tabular}
+
+\vspace{0.8em}
+\begin{center}
+$\downarrow$ \textbf{Moderated by:} Industry sector $\cdot$ Organizational size $\cdot$ Digital maturity $\cdot$ Governance maturity
+\end{center}
+
+\vspace{0.5em}
+\begin{center}
+\textbf{Sustainability Tensions:} Security vulnerabilities $\cdot$ Technical debt $\cdot$ ``Vulnerable developer'' phenomenon $\cdot$ Skill erosion $\cdot$ LLM energy costs
+\end{center}
+\end{minipage}%
+}
+\caption{Integrated conceptual model: Vibe coding adoption, dynamic capability enhancement, and digital resilience outcomes.}
+\label{fig:conceptual-model}
+\end{figure}
+
+The justification for this multi-theory approach is threefold. First, TOE and DOI together provide complementary explanations for adoption variance. Second, Dynamic Capabilities Theory explains how adoption translates into organizational impact on resilience. Third, the integration enables identification of tensions and paradoxes that single-theory approaches would miss.
+
+
+%% ====================================================================
+\section{Research Methodology}
+\label{sec:methodology}
+%% ====================================================================
+
+\subsection{Research Design and Justification}
+
+This study employs directed content analysis following \citet{Hsieh2005}, supplemented by \citeauthor{Mayring2014}'s (\citeyear{Mayring2014}) systematic procedures and \citeauthor{Elo2008}'s (\citeyear{Elo2008}) preparation-organizing-reporting structure. Directed content analysis begins with existing theory as initial coding guidance---in our case, the integrated Dynamic Capabilities, TOE, and DOI framework---while remaining open to new categories that emerge inductively from the data \citep{Hsieh2005}. This approach is particularly appropriate for three reasons. First, vibe coding is an emerging phenomenon with fragmented discourse across heterogeneous sources; content analysis enables systematic synthesis. Second, the directed approach leverages established theoretical frameworks while accommodating novel dynamics. Third, multi-source design enables triangulation that strengthens validity.
+
+
+\subsection{Data Collection}
+\label{sec:data-collection}
+
+\subsubsection{Search Strategy}
+
+Data collection employed a systematic multi-source triangulation strategy across four source types, as summarized in Table~\ref{tab:corpus}.
+
+\begin{table}[htbp]
+\centering
+\caption{Data source types, search strategies, and corpus distribution.}
+\label{tab:corpus}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}p{3cm}p{4.5cm}p{4.5cm}cc@{}}
+\toprule
+\textbf{Source Type} & \textbf{Scope} & \textbf{Search Strategy} & \textbf{Retrieved} & \textbf{Included} \\
+\midrule
+Academic literature & Peer-reviewed papers on vibe coding, AI-assisted development, low-code + DT + resilience & Scopus, Web of Science, IEEE Xplore, ACM DL, AISeL; PRISMA 2020 & 127 & 34 \\
+\addlinespace
+Grey literature & Industry reports, whitepapers, enterprise case studies & Gartner, Forrester, McKinsey, BCG, Atos, HCLTech, Genpact; \citet{Garousi2019} guidelines + AACODS & 89 & 31 \\
+\addlinespace
+Developer community & Practitioner blogs, forums, social media & Stack Overflow, GitHub, Reddit, X/Twitter, DEV Community, Medium & 112 & 22 \\
+\addlinespace
+Platform documentation & Official docs, enterprise case studies & Cursor, Replit, Claude Code, Copilot, v0.dev, Bolt, Lovable + OutSystems, Mendix, Power Apps & 38 & 10 \\
+\midrule
+\textbf{Total} & & & \textbf{366} & \textbf{97} \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+Search keywords were organized into four clusters: (a)~primary terms: ``vibe coding,'' ``AI-assisted coding,'' ``AI-assisted development,'' ``LLM coding,'' ``vibe engineering''; (b)~combined with: ``digital transformation,'' ``digital resilience,'' ``enterprise resilience,'' ``organizational resilience,'' ``citizen developer''; (c)~comparative terms: ``low-code,'' ``no-code,'' ``CASE tools''; (d)~temporal scope: February 2025 to February 2026 for vibe coding; 2014--2026 for low-code comparative sources.
+
+\subsubsection{Inclusion and Exclusion Criteria}
+
+Table~\ref{tab:criteria} presents the inclusion and exclusion criteria applied across all source types.
+
+\begin{table}[htbp]
+\centering
+\caption{Inclusion and exclusion criteria.}
+\label{tab:criteria}
+\small
+\begin{tabularx}{\textwidth}{@{}lXX@{}}
+\toprule
+\textbf{Criteria} & \textbf{Include} & \textbf{Exclude} \\
+\midrule
+Language & English & Non-English \\
+\addlinespace
+Timeframe & Feb 2025--Feb 2026 (vibe coding); 2014--2026 (low-code/DT) & Before 2014 for comparative sources \\
+\addlinespace
+Focus & Organizational/business impact on DT/resilience & Purely technical benchmarks without organizational context \\
+\addlinespace
+Quality & Peer-reviewed OR grey lit $\geq$ 10/15 on AACODS & Marketing materials; sources $<$ 10/15 quality \\
+\addlinespace
+Relevance & Adoption, impact, benefits, barriers at organizational level & Solely individual developer productivity metrics \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsubsection{Quality Assessment}
+
+Academic sources were assessed through the peer-review process as a baseline quality indicator. Grey literature was assessed using the AACODS checklist \citep{Tyndall2010} (Authority, Accuracy, Coverage, Objectivity, Date, Significance), with a threshold of 10/15 for inclusion, following \citeauthor{Garousi2019}'s (\citeyear{Garousi2019}) guidelines. Developer community sources were evaluated for substantive analytical content, author credibility, and engagement metrics.
+
+\subsubsection{Corpus Description}
+
+The final corpus comprises 97 sources: 34 academic papers (35.1\%), 31 grey literature sources (32.0\%), 22 developer community sources (22.7\%), and 10 platform documentation sources (10.3\%). Geographically, sources originate from North America (48.5\%), Europe (27.8\%), Asia-Pacific (16.5\%), and other regions (7.2\%).
+
+
+\subsection{Data Analysis Procedure}
+\label{sec:analysis}
+
+\subsubsection{Hierarchical Coding Framework}
+
+Following the directed content analysis approach \citep{Hsieh2005}, we developed a hierarchical coding framework with deductive categories derived from our theoretical framework and inductive subcodes that emerged during analysis. Table~\ref{tab:coding} presents the framework.
+
+\begin{table}[htbp]
+\centering
+\caption{Hierarchical coding framework.}
+\label{tab:coding}
+\small
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+\textbf{Meta-Category (Deductive)} & \textbf{Sub-Categories (Deductive)} \\
+\midrule
+1. Paradigm Characteristics & Natural language interface; AI-generated code; acceptance without review; iterative error resolution; code exceeding comprehension \\
+\addlinespace
+2. Adoption Drivers & Speed/efficiency; cost reduction; accessibility/democratization; skills gap mitigation; competitive pressure; innovation velocity \\
+\addlinespace
+3. Adoption Barriers & Security vulnerabilities; technical debt; governance gaps; quality concerns; skill erosion; vendor/AI dependency; regulatory compliance \\
+\addlinespace
+4. Dynamic Capability Enhancement & Rapid prototyping (sensing); time-to-market compression (seizing); citizen developer empowerment (transforming); organizational boundary reconfiguration \\
+\addlinespace
+5. DT Enablement & Cross-functional development; legacy modernization; process automation; customer-facing innovation; internal tool building \\
+\addlinespace
+6. Resilience Outcomes & Operational continuity; adaptive capacity; innovation velocity; knowledge retention/loss; workforce resilience \\
+\addlinespace
+7. Sustainability Tensions & Resource efficiency vs.\ LLM energy costs; democratization vs.\ quality erosion; speed vs.\ technical debt; agility vs.\ governance \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsubsection{Coding Process}
+
+The unit of analysis was the meaningful text segment at the paragraph or quote level. Analysis proceeded in three phases: (1)~preparation---corpus compilation, quality assessment, and familiarization; (2)~organizing---deductive coding using the a priori framework, followed by inductive coding; and (3)~reporting---synthesis, frequency analysis, and thematic integration \citep{Elo2008}. All coding was conducted using NVivo~14.
+
+
+\subsection{Quality Assurance}
+\label{sec:quality}
+
+\textbf{Intercoder reliability.} Two researchers independently coded 20\% of the corpus (20 sources stratified across all four source types). Initial Krippendorff's Alpha was 0.74. Following discussion, refinement of coding definitions, and a second round, Alpha reached 0.83, exceeding the 0.80 threshold recommended by \citet{Krippendorff2019}.
+
+\textbf{Trustworthiness.} Following \citet{Lincoln1985}, we addressed: credibility through triangulation and member checking with three industry practitioners; transferability through thick description; dependability through a detailed audit trail; and confirmability through a reflexive journal.
+
+\textbf{Pilot coding.} The framework was pilot-tested on 10\% of the corpus (10 sources), resulting in refinement of three sub-category definitions and addition of two inductive subcodes.
+
+\textbf{Reflexivity.} Following \citet{Nicmanis2024}, we acknowledge our positionality as information systems researchers with prior experience in digital transformation and technology adoption.
+
+
+%% ====================================================================
+\section{Findings}
+\label{sec:findings}
+%% ====================================================================
+
+\subsection{Descriptive Overview of the Corpus}
+
+The 97-source corpus reveals a discourse landscape dominated by practitioner and industry voices. Academic literature constitutes only 35.1\% of the corpus, reflecting the recency of the phenomenon. Within academic sources, 73.5\% are preprints or conference papers rather than journal articles. The most frequently coded meta-categories were Adoption Drivers (coded in 81.4\% of sources), Paradigm Characteristics (76.3\%), and Adoption Barriers (74.2\%). Dynamic Capability Enhancement (52.6\%) and Digital Resilience Outcomes (41.2\%) were less frequently coded, confirming that organizational-level impact analysis remains underdeveloped.
+
+Temporal analysis reveals exponential growth: 8 sources in February--April 2025 (the ``naming period''), 23 in May--July (``awareness expansion''), 31 in August--October (``critical analysis''), and 35 in November 2025--February 2026 (``maturation''), suggesting rapid evolution from excitement toward nuanced assessment.
+
+
+\subsection{The Vibe Coding Paradigm: Characterization and Evolution (RQ1)}
+\label{sec:RQ1}
+
+\subsubsection{Discourse Across Source Types}
+
+A significant divergence exists between academic and practitioner framings. Academic sources predominantly frame vibe coding as a productivity tool with associated risks, employing quantitative metrics \citep{Fawzy2025, SurveyVibeCoding2025, VibeCodingFlowDebt2025}. Practitioner and industry sources frame it as a paradigm shift with organizational implications, using language of ``democratization,'' ``disruption,'' and ``transformation'' \citep{Shmargad2025, McKinsey2025, Atos2025}. Developer community sources exhibit the widest range, from enthusiastic advocacy to deep skepticism \citep{Reddit2025, DEVCommunity2025}.
+
+\subsubsection{Positioning on the CASE $\rightarrow$ Low-Code $\rightarrow$ Vibe Coding Continuum}
+
+Our analysis identifies vibe coding as the third major paradigm in software development automation. Table~\ref{tab:comparison} presents a systematic comparison, extending \citeauthor{Sanchis2020}'s (\citeyear{Sanchis2020}) benchmarking framework (their Table~5) to include vibe coding.
+
+\begin{table}[htbp]
+\centering
+\caption{Comparative analysis of development automation paradigms (extending \citet{Sanchis2020}).}
+\label{tab:comparison}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}p{2.8cm}p{3.5cm}p{3.8cm}p{4.2cm}@{}}
+\toprule
+\textbf{Feature} & \textbf{CASE Tools (1980s--90s)} & \textbf{Low-Code (2014--present)} & \textbf{Vibe Coding (2025--present)} \\
+\midrule
+Development interface & Visual modeling (UML), structured design & Visual drag-and-drop, pre-built modules & Natural language prompts to LLMs \\
+\addlinespace
+Code generation & Automated from models (often partial) & Platform-specific configs & Standard code (HTML, CSS, JS, Python) \\
+\addlinespace
+Code ownership & Developer-owned, tool-dependent formats & Vendor-locked / platform-dependent & Full ownership, deploy anywhere \\
+\addlinespace
+Target user & Professional developers & Citizen developers (some training) & Anyone with domain knowledge \\
+\addlinespace
+Learning curve & High (specialized training) & Moderate (platform-specific) & Near-zero (natural language) \\
+\addlinespace
+Security governance & Developer-managed & Platform-embedded controls & Unstructured; 45\% vulnerabilities \\
+\addlinespace
+Enterprise scalability & Designed for enterprise; poor adoption & Proven for departmental apps & Uncertain; complexity ceiling \\
+\addlinespace
+Development speed & Modest improvement & 5--10$\times$ faster & 60--80\% faster; prototypes in hours \\
+\addlinespace
+Cost model & High license + training & Platform subscription & AI API costs (often lower) \\
+\addlinespace
+QA practices & Integrated verification tools & Built-in testing & Often skipped (36\% skip QA) \\
+\addlinespace
+Vendor lock-in & Moderate & High (platform dependency) & Low (standard code output) \\
+\addlinespace
+Maintenance burden & Moderate & Low (platform-managed) & High (AI code harder to maintain) \\
+\addlinespace
+Governance maturity & Moderate & Established (compliance features) & Nascent (no built-in governance) \\
+\addlinespace
+Adoption rate & 26.5\% peak & Growing; \$21.2B market & 87\% Fortune 500 in 12 months \\
+\addlinespace
+Key failure mode & Unrealistic expectations, complexity & Vendor lock-in, scalability & Security, tech debt, skill erosion \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+This comparative analysis reveals that each paradigm addressed specific limitations of its predecessor while introducing new challenges. Vibe coding addresses accessibility (natural language interface) and eliminates vendor lock-in (standard code output) but introduces novel risks around code quality, security, and the decoupling of code creation from code comprehension.
+
+
+\subsection{Vibe Coding and Digital Resilience: Enablers and Threats (RQ2)}
+\label{sec:RQ2}
+
+\subsubsection{Resilience Enablers Mapped to Dynamic Capabilities}
+
+\paragraph{Sensing enhancement.} Forty-seven sources (48.5\%) identify vibe coding's rapid prototyping capability as a significant enhancer of organizational sensing. The ability to build functional MVPs in hours rather than months allows organizations to test market hypotheses at dramatically reduced cost. One industry report describes a financial services firm that used vibe coding to build and deploy seven prototype customer-facing applications in a single sprint \citep{Atos2025}. This ``hypothesis velocity'' directly enhances the sensing dimension of dynamic capabilities as theorized by \citet{Warner2019}.
+
+\paragraph{Seizing acceleration.} Fifty-three sources (54.6\%) identify compressed development cycles as the primary seizing enhancement. The reduction of time-to-market from months to days or hours enables organizations to capture value before competitors. Cost reduction amplifies seizing by lowering the threshold for pursuing opportunities---\citet{McKinsey2025} estimates that organizations using AI-assisted development reduce costs by 30--50\% for appropriate use cases.
+
+\paragraph{Transforming capability.} Thirty-nine sources (40.2\%) identify citizen developer empowerment as a transformative capability. When non-technical staff can build functional applications through natural language, the boundary between IT and business functions fundamentally shifts. This manifests as: business units building their own tools; domain experts creating specialized applications capturing tacit knowledge; distributed innovation; and a broader base of digitally capable employees creating resilience to talent loss \citep{Lethbridge2024, HCLTech2025}.
+
+\subsubsection{Threats to Resilience}
+
+\paragraph{Security vulnerabilities.} The most frequently coded threat (60.8\% of sources). \citeauthor{Veracode2025}'s (\citeyear{Veracode2025}) report found that 45\% of AI-generated code introduces security vulnerabilities. \citet{CodeRabbit2025} reported 2.74$\times$ higher security issues in AI co-authored code. The threat is compounded by the ``accept all'' mentality characteristic of vibe coding---vulnerabilities propagate into production undetected.
+
+\paragraph{The ``vulnerable developer'' phenomenon.} Thirty-one sources (32.0\%) discuss what \citet{Fawzy2025} term the ``vulnerable developer''---a practitioner who can build applications but cannot debug, maintain, secure, or understand the code. An estimated 63\% of active vibe coding practitioners are non-developers lacking maintenance skills. This directly undermines the coping dimension of resilience.
+
+\paragraph{Technical debt accumulation.} Forty-four sources (45.4\%) identify technical debt as a significant concern. The ``flow-debt trade-off'' \citep{VibeCodingFlowDebt2025} captures this dynamic: frictionless code generation encourages rapid production, but the code often exhibits architectural inconsistencies, redundant logic, and violations of best practices. Since maintenance represents over 80\% of total software lifecycle cost \citep{Pressman2020}, fast-to-build but expensive-to-maintain code does not necessarily reduce total cost of ownership.
+
+\paragraph{Skill erosion and knowledge concentration risk.} Twenty-six sources (26.8\%) raise concerns about long-term skill erosion. When developers routinely accept AI-generated code without engaging in design and debugging, core engineering skills may atrophy, creating fragile AI dependency \citep{Fawzy2025, DEVCommunity2025}.
+
+\subsubsection{Comparative Resilience Analysis}
+
+Table~\ref{tab:resilience} presents a comparative analysis of resilience factors across low-code and vibe coding paradigms.
+
+\begin{table}[htbp]
+\centering
+\caption{Comparative resilience analysis: Low-code vs.\ vibe coding.}
+\label{tab:resilience}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}p{3.3cm}p{3.5cm}p{3.5cm}p{3.5cm}@{}}
+\toprule
+\textbf{Resilience Factor} & \textbf{Low-Code} & \textbf{Vibe Coding} & \textbf{Assessment} \\
+\midrule
+Development speed & 5--10$\times$ faster & 60--80\% faster; hours & VC significantly amplifies \\
+\addlinespace
+Cost of experimentation & Moderate (subscription) & Low (API costs) & VC lowers barrier further \\
+\addlinespace
+Citizen developer enablement & Partial (training needed) & Extensive (NL interface) & VC dramatically extends \\
+\addlinespace
+Security governance & Platform-embedded & No built-in governance & LC significantly stronger \\
+\addlinespace
+Code maintainability & Platform-managed updates & Developer-managed; poor docs & LC significantly stronger \\
+\addlinespace
+Vendor lock-in risk & High (platform dependency) & Low (standard code) & VC significantly stronger \\
+\addlinespace
+Knowledge retention & Moderate & Low (code $>$ comprehension) & LC moderately stronger \\
+\addlinespace
+Governance maturity & Established & Nascent & LC significantly stronger \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+This comparison reveals that vibe coding amplifies both the positive (speed, cost, democratization) and negative (security, maintenance, knowledge fragility) resilience dimensions. The key differentiator is governance: low-code embeds governance within platforms, while vibe coding places the entire burden on the organization.
+
+
+\subsection{Adoption Factors and Sustainability Implications (RQ3)}
+\label{sec:RQ3}
+
+\subsubsection{TOE Analysis of Adoption Factors}
+
+\textbf{Technology factors.} The most cited driver is LLM capability trajectory (67.0\%), followed by tool ecosystem maturity (54.6\%). The primary barrier is integration challenges (41.2\%)---connecting AI-generated code with existing enterprise systems requires expertise contradicting the accessibility promise \citep{Fawzy2025, SurveyVibeCoding2025}.
+
+\textbf{Organizational factors.} Existing digital maturity emerges as the strongest organizational predictor (52.6\%). Organizations with established development workflows can integrate vibe-coded contributions more safely. Governance readiness (38.1\%) is critical but often absent \citep{HCLTech2025, Genpact2025}.
+
+\textbf{Environmental factors.} Competitive pressure is the most cited driver (61.9\%): with 87\% of Fortune 500 adopting \citep{Shmargad2025}, non-adopters face strategic anxiety. The talent shortage (49.5\%) drives adoption as a substitute for scarce human resources. Regulatory uncertainty (35.1\%) acts as both barrier and driver.
+
+\subsubsection{DOI Analysis}
+
+Vibe coding exhibits an unusual combination of innovation characteristics: exceptionally high relative advantage, trialability, observability, and low complexity, but poor compatibility with existing engineering practices. This creates what we term a \emph{``quality chasm''}---rapid diffusion for prototyping and non-critical applications, with slower adoption for production and mission-critical systems. Whether vibe coding crosses this chasm for enterprise applications \citep{Moore2014} will depend on governance framework maturation and resolution of quality concerns.
+
+\subsubsection{Sustainability Tensions}
+
+Four primary tensions emerge:
+
+\begin{enumerate}
+  \item \textbf{Speed vs.\ quality} (63.9\%): 62\% are motivated by speed but 68\% perceive outputs as ``fast but flawed'' \citep{Fawzy2025}. The speed advantage derives partly from skipping quality assurance steps.
+  \item \textbf{Democratization vs.\ governance} (38.1\%): When anyone can build and deploy applications, shadow IT risk increases. \citet{Sanchis2020} identified this tension in low-code; vibe coding amplifies it.
+  \item \textbf{Innovation velocity vs.\ technical debt} (35.1\%): Rapid creation of hard-to-maintain code may generate negative long-term value \citep{VibeCodingFlowDebt2025, Pressman2020}.
+  \item \textbf{Resource efficiency vs.\ environmental cost} (16.5\%): LLM inference requires significant energy; generating code through AI shifts environmental burden from human labor to data center computation \citep{Strubell2019}.
+\end{enumerate}
+
+
+%% ====================================================================
+\section{Discussion}
+\label{sec:discussion}
+%% ====================================================================
+
+\subsection{Theoretical Contributions}
+
+\subsubsection{The Resilience Paradox}
+
+The central theoretical contribution is the identification of the \emph{``resilience paradox''} of vibe coding. Through Dynamic Capabilities Theory, we find that vibe coding simultaneously strengthens and weakens organizational digital resilience. It strengthens sensing (rapid prototyping), seizing (compressed time-to-market), and transforming (citizen developer empowerment). Yet it introduces fragilities that undermine coping (security vulnerabilities, unmaintainable code) and may compromise adaptation (skill erosion, knowledge concentration risk).
+
+This extends \citeauthor{Warner2019}'s (\citeyear{Warner2019}) framework. Their nine microfoundations assume digital capabilities are built by competent actors who understand the tools and systems they create. Vibe coding challenges this assumption. We propose an extension introducing a \emph{``capability quality''} dimension alongside capability speed and scope---recognizing that faster capability building is only beneficial if the outputs are reliable, secure, and maintainable.
+
+\subsubsection{TOE Refinement for AI-Assisted Development}
+
+Our findings refine TOE in three ways. First, the technology dimension must account for AI model capability as a \emph{dynamically evolving} factor---unlike traditional technologies with stable feature sets, LLM capabilities change with each model generation. Second, the organizational dimension must incorporate ``AI readiness'' as distinct from traditional IT readiness. Third, the environmental dimension is characterized by unusually intense competitive pressure and FOMO dynamics that may drive premature adoption.
+
+\subsubsection{DOI Insights and the Quality Chasm}
+
+Our DOI analysis reveals that vibe coding's innovation attributes predict extremely rapid diffusion. However, the compatibility gap creates a ``quality chasm'' that may segment the market into two adoption trajectories: rapid adoption for non-critical applications and slower adoption for enterprise-grade systems. This extends \citeauthor{Rogers2003}'s (\citeyear{Rogers2003}) theory by identifying how a single innovation can follow different diffusion curves based on use-case criticality.
+
+
+\subsection{Practical Implications for Organizations}
+
+\subsubsection{Governance Framework}
+
+We propose a tiered governance framework aligned with application criticality:
+
+\textbf{Tier~1---Exploration and prototyping (minimal governance).} For internal prototypes and disposable experiments. No production deployment, no sensitive data.
+
+\textbf{Tier~2---Internal tools and departmental applications (moderate governance).} Requires automated security scanning, basic code review, integration testing, and documentation.
+
+\textbf{Tier~3---Customer-facing and business-critical (full governance).} Subject to comprehensive code review, security audit, performance testing, compliance verification, and maintenance planning.
+
+\subsubsection{The ``Vibe Engineering'' Middle Ground}
+
+\citeauthor{Willison2025}'s (\citeyear{Willison2025}) distinction between vibe coding and ``vibe engineering'' points toward a sustainable practice. Organizations may establish vibe engineering as the standard for professional developers, reserving pure vibe coding for Tier~1 activities.
+
+\subsubsection{Hybrid Development Strategy}
+
+The optimal strategy deploys paradigms complementarily: \emph{vibe coding} for prototyping and exploration; \emph{low-code platforms} for production departmental applications requiring governance; and \emph{traditional development} for mission-critical systems with stringent requirements.
+
+\subsubsection{Workforce Implications}
+
+Emerging roles include AI code reviewers, prompt engineers, and digital capability coordinators. Existing developers should be reskilled toward AI-augmented practices rather than replaced, as engineering expertise becomes more valuable when AI-generated code requires human oversight \citep{Fawzy2025, DEVCommunity2025}.
+
+
+\subsection{Forecasting the Paradigm Shift}
+
+\subsubsection{Hype Cycle Positioning}
+
+Applying the Gartner Hype Cycle, vibe coding in early 2026 appears to be approaching the ``Peak of Inflated Expectations.'' We anticipate a ``Trough of Disillusionment'' in 2026--2027 as organizations experience consequences of ungoverned vibe-coded applications at scale.
+
+\subsubsection{Historical Parallels with CASE Tools}
+
+Both CASE tools and vibe coding generated initial enthusiasm and promised democratization. However, critical differences suggest vibe coding may avoid CASE's trajectory: dramatically lower learning curve, lower experimentation cost, immediately visible results, and an underlying technology on a steep improvement trajectory. The cautionary parallel is the quality gap---if AI-generated code remains fundamentally less reliable, organizations may confine vibe coding to narrow use cases.
+
+\subsubsection{Critical Factors for Sustainable Adoption}
+
+Five factors will determine mainstream adoption: (1)~\emph{security maturation}---AI tools must achieve substantially lower vulnerability rates; (2)~\emph{governance standardization}---industry-standard frameworks must emerge; (3)~\emph{maintenance tooling}---tools for maintaining AI-generated code must mature; (4)~\emph{regulatory clarity}---guidance for AI-generated code in regulated industries; and (5)~\emph{educational adaptation}---curricula must evolve for AI-augmented development.
+
+\subsubsection{Vision: The Hybrid Future}
+
+The future is a layered coexistence of vibe coding, low-code, and traditional development, each serving different use cases along a criticality spectrum. Organizations developing governance frameworks, workforce capabilities, and strategic clarity to deploy each paradigm appropriately will be best positioned for digital resilience.
+
+
+%% ====================================================================
+\section{Conclusion, Limitations, and Future Research}
+\label{sec:conclusion}
+%% ====================================================================
+
+\subsection{Summary of Contributions}
+
+This study provides the first theoretically grounded, cross-industry content analysis of vibe coding's impact on organizational digital transformation and resilience. Through directed content analysis of 97 sources analyzed through Dynamic Capabilities, TOE, and DOI, we offer three principal contributions.
+
+Addressing \textbf{RQ1}, we characterize vibe coding as the third paradigm in software development automation, document academic--practitioner discourse divergence, and provide a systematic comparative analysis extending \citeauthor{Sanchis2020}'s (\citeyear{Sanchis2020}) framework.
+
+Addressing \textbf{RQ2}, we identify and theorize the \emph{``resilience paradox''}---vibe coding simultaneously enhances sensing, seizing, and transforming capabilities while introducing security vulnerabilities (45\%), the ``vulnerable developer'' phenomenon (63\%), technical debt, and skill erosion risk.
+
+Addressing \textbf{RQ3}, we identify adoption factors through TOE analysis, characterize the DOI ``quality chasm,'' and document four sustainability tensions: speed vs.\ quality, democratization vs.\ governance, innovation velocity vs.\ technical debt, and resource efficiency vs.\ environmental cost.
+
+
+\subsection{Practical Takeaways}
+
+For organizational leaders: (a)~adopt a tiered governance framework matching rigor to criticality; (b)~establish vibe engineering as the professional standard; (c)~pursue hybrid development strategies; (d)~invest in reskilling toward AI-augmented development; and (e)~prepare for governance and maintenance challenges as vibe-coded applications mature.
+
+
+\subsection{Limitations}
+
+Several limitations must be acknowledged. First, the 12-month temporal scope captures a rapidly evolving phenomenon in its earliest stage. Second, English-only restriction excludes perspectives from non-English-speaking communities. Third, content analysis involves subjective interpretation despite intercoder reliability (Alpha = 0.83). Fourth, specific statistics may become outdated quickly. Fifth, our analysis draws on published discourse rather than primary organizational data.
+
+
+\subsection{Future Research Agenda}
+
+This study opens several avenues: (1)~longitudinal case studies tracking resilience outcomes over time; (2)~quantitative survey research testing our TOE model; (3)~sector-specific deep dives in regulated industries; (4)~environmental impact quantification of AI-assisted vs.\ traditional development; (5)~focused investigation of the ``vulnerable developer'' phenomenon; (6)~governance framework validation through action research; and (7)~comparative international studies across regulatory and cultural contexts.
+
+As vibe coding continues its rapid diffusion, the resilience paradox identified in this study underscores the urgency: vibe coding's extraordinary potential to accelerate digital transformation is matched by its capacity to introduce new fragilities. Organizations, policymakers, and researchers must engage critically with both dimensions to ensure this paradigm shift contributes to sustainable digital resilience rather than the accumulation of hidden digital risk.
+
+
+%% ====================================================================
+%% References
+%% ====================================================================
+\bibliographystyle{elsarticle-harv}
+\bibliography{references}
+
+\end{document}
