@@ -1,6 +1,6 @@
-%% Manuscript for Technological Forecasting and Social Change (Elsevier)
+%% Manuscript for Digital Business (Elsevier)
 %% Using elsarticle document class — the official Elsevier template
-%% Reference style: numbered (elsarticle-num)
+%% Reference style: APA 7 / author--year (elsarticle-harv)
 %%
 \documentclass[preprint,12pt,authoryear]{elsarticle}
 
@@ -27,7 +27,7 @@
 \modulolinenumbers[5]
 
 %% Journal name
-\journal{Technological Forecasting and Social Change}
+\journal{Digital Business}
 
 %% ---------------------------------------------------------------
 \begin{document}
@@ -55,7 +55,7 @@
 
 %% Abstract
 \begin{abstract}
-Digital transformation remains a strategic imperative for organizations worldwide, yet approximately 70\% of initiatives fail, costing an estimated \$2.3 trillion annually. Traditional software development is expensive (\$434K--\$2.3M per project), slow, and constrained by scarce technical talent. While low-code development platforms emerged as a partial solution---accelerating development 5--10$\times$ and enabling citizen developer participation---they introduced vendor lock-in, scalability constraints, and platform fragmentation. In February 2025, Andrej Karpathy coined the term ``vibe coding'' to describe a radically new AI-assisted programming paradigm in which developers describe desired functionality in natural language and accept AI-generated code, often without full comprehension of the output. Within one year, 87\% of Fortune 500 companies adopted at least one vibe coding platform, and the term was named Collins Dictionary Word of the Year 2025. Despite this rapid adoption, no theoretically grounded academic study has investigated how vibe coding contributes to organizational digital transformation and resilience across business sectors. This paper addresses this gap through a directed content analysis of 97 sources spanning academic literature, industry reports, developer community discourse, and platform documentation. Using an integrated theoretical lens combining Dynamic Capabilities Theory, the Technology-Organization-Environment (TOE) framework, and Diffusion of Innovation (DOI) Theory, we systematically analyze vibe coding's role in enabling digital transformation and building---or undermining---organizational digital resilience. Our findings reveal a ``resilience paradox'': vibe coding simultaneously strengthens organizational resilience through accelerated sensing, seizing, and transforming capabilities while introducing novel fragilities including security vulnerabilities (present in 45\% of AI-generated code), technical debt accumulation, and a ``vulnerable developer'' phenomenon affecting 63\% of vibe coding practitioners. We extend Sanchis et al.'s (2020) low-code/manufacturing framework to the vibe coding era and broader business contexts, provide a comparative analysis of low-code versus vibe coding paradigms, and propose a governance framework for sustainable vibe coding adoption. We further situate vibe coding as the fourth paradigm in software-development automation, building on CASE tools, the RAD/IDE/web-framework era, and low-code platforms. The paper concludes with a forecasting analysis positioning vibe coding on the technology adoption lifecycle and identifying critical factors that will determine whether it achieves sustainable mainstream enterprise adoption or follows the trajectory of earlier automation paradigms such as CASE tools. We forecast a bifurcated diffusion trajectory in which vibe coding crosses the chasm rapidly for non-critical applications while encountering a persistent quality threshold for enterprise-grade systems, with implications for educational curricula, regulatory frameworks, and organisational governance design through 2030.
+Approximately 70\% of digital transformation initiatives fail, costing organizations an estimated \$2.3 trillion annually, with traditional software development (\$434K--\$2.3M per project) and scarce technical talent as fundamental bottlenecks. In February 2025, Andrej Karpathy coined ``vibe coding'' to describe an AI-assisted programming paradigm in which developers describe desired functionality in natural language and accept AI-generated code, often without full comprehension. Within twelve months, 87\% of Fortune 500 companies adopted at least one vibe coding platform, and the term was named Collins Dictionary Word of the Year 2025. Yet no theoretically grounded academic study has investigated how vibe coding contributes to organizational digital transformation and resilience. This paper addresses that gap through a directed content analysis of 97 sources spanning academic literature, industry reports, developer community discourse, and platform documentation. Using an integrated lens combining Dynamic Capabilities Theory, the Technology--Organization--Environment framework, and Diffusion of Innovation theory, we identify a \emph{resilience paradox}: vibe coding simultaneously strengthens organizational resilience through accelerated sensing, seizing, and transforming capabilities while introducing fragilities including security vulnerabilities (45\% of AI-generated code), technical debt, and a ``vulnerable developer'' phenomenon affecting 63\% of practitioners. We extend Sanchis et al.\ (2020) by situating vibe coding as the fourth paradigm in software-development automation---following CASE, the RAD/IDE/web-framework era, and low-code---and propose a tiered governance framework for sustainable adoption. We forecast a bifurcated diffusion trajectory: rapid adoption for non-critical applications and a persistent quality threshold for enterprise-grade systems through 2030.
 \end{abstract}
 
 \begin{keyword}
@@ -63,6 +63,23 @@ vibe coding \sep digital transformation \sep digital resilience \sep AI-assisted
 \end{keyword}
 
 \end{frontmatter}
+
+%% ====================================================================
+%% Highlights (3--5 bullets, max 85 characters each)
+%% Per Digital Business guide: encouraged; submit as separate editable file.
+%% ====================================================================
+\begin{center}
+\begin{minipage}{0.95\textwidth}
+\textbf{Highlights}
+\begin{itemize}[leftmargin=2em, itemsep=2pt, topsep=2pt]
+  \item First theory-grounded analysis of vibe coding's organizational impact (n=97).
+  \item Identifies a ``resilience paradox'': vibe coding both builds and breaks resilience.
+  \item Frames vibe coding as the fourth paradigm in software-development automation.
+  \item Proposes a tiered governance framework matched to application criticality.
+  \item Forecasts bifurcated diffusion to 2030 with explicit observable signposts.
+\end{itemize}
+\end{minipage}
+\end{center}
 
 \linenumbers
 
@@ -89,7 +106,7 @@ Specifically, this study addresses three research questions:
   \item[\textbf{RQ3:}] What are the enabling factors, barriers, and sustainability implications of vibe coding adoption for digital transformation?
 \end{itemize}
 
-By answering these questions, this paper makes three primary contributions. First, it provides the first systematic, multi-source content analysis of vibe coding's organizational-level impact, synthesizing fragmented discourse across academic, industry, practitioner, and platform documentation sources. Second, it introduces the concept of the ``resilience paradox''---the finding that vibe coding simultaneously strengthens and weakens organizational digital resilience---and theorizes this tension through the lens of Dynamic Capabilities. Third, it offers practical governance frameworks and a forecasting analysis spanning the 2025--2030 horizon, identifying critical transition factors and the boundary conditions under which vibe coding's resilience-enhancing effects are likely to dominate its resilience-undermining effects, addressing recent calls for contingency-aware digital transformation theory \citep{Hanelt2021, Verhoef2021} and positioning this work squarely within the anticipatory and futures-oriented tradition of \emph{Technological Forecasting and Social Change}.
+By answering these questions, this paper makes three primary contributions. First, it provides the first systematic, multi-source content analysis of vibe coding's organizational-level impact, synthesizing fragmented discourse across academic, industry, practitioner, and platform documentation sources. Second, it introduces the concept of the ``resilience paradox''---the finding that vibe coding simultaneously strengthens and weakens organizational digital resilience---and theorizes this tension through the lens of Dynamic Capabilities. Third, it offers practical governance frameworks and a forecasting analysis spanning the 2025--2030 horizon, identifying critical transition factors and the boundary conditions under which vibe coding's resilience-enhancing effects are likely to dominate its resilience-undermining effects, addressing recent calls for contingency-aware digital transformation theory \citep{Hanelt2021, Verhoef2021}.
 
 
 %% ====================================================================
@@ -155,7 +172,7 @@ The relationship between digital transformation and resilience is increasingly w
 
 A critical but under-theorized link exists between software development speed and organizational resilience. When organizations can build, test, and deploy digital solutions rapidly, they gain the ability to: (a)~detect market opportunities and threats through rapid prototyping and MVP testing; (b)~respond to disruptions by building digital solutions in days rather than months; and (c)~continuously adapt their digital infrastructure as conditions change. This positions development capability---specifically, the speed and accessibility of software creation---as a direct enabler of digital resilience. Both low-code platforms and vibe coding dramatically compress development timelines, but through fundamentally different mechanisms \citep{Sanchis2020, Fawzy2025}.
 
-From a forecasting perspective, prior contributions have framed enterprise resilience as a function of \emph{anticipatory capacity}---the organizational ability to construct and revise plausible futures \citep{Rohrbeck2018}. Vibe coding's central forecasting question is whether it strengthens or atrophies anticipatory capacity. By dramatically lowering the cost of building exploratory prototypes, it may expand the futures organizations can plausibly explore; by potentially eroding deep technical understanding, it may simultaneously narrow the realistic horizon of what those organizations can build and operate. This tension is what our integrated theoretical framework, presented next, is designed to surface.
+From a strategic perspective, enterprise resilience has been framed as a function of \emph{anticipatory capacity}---the organizational ability to construct and revise plausible futures \citep{Rohrbeck2018}. Vibe coding's central question for digital business is whether it strengthens or atrophies this capacity. By dramatically lowering the cost of building exploratory prototypes, it may expand the futures organizations can plausibly explore; by potentially eroding deep technical understanding, it may simultaneously narrow the realistic horizon of what those organizations can build and operate. This tension is what our integrated theoretical framework, presented next, is designed to surface.
 
 
 \subsection{Theoretical Lens}
@@ -608,7 +625,7 @@ Five factors will determine mainstream adoption: (1)~\emph{security maturation}-
 
 \subsubsection{Scenario Forecasts: Three Trajectories to 2030}
 
-Synthesising our findings across TOE, DOI, and Dynamic Capabilities, we project three plausible trajectories for vibe coding adoption through 2030. The actual trajectory is likely to be a weighted combination of these, with weights determined by the five critical factors enumerated above. Consistent with the journal's anticipatory mission, we present these as forecasting heuristics for organizational decision-makers, regulators, and educators, and identify observable signposts that distinguish them over the 2026--2028 window.
+Synthesising our findings across TOE, DOI, and Dynamic Capabilities, we project three plausible trajectories for vibe coding adoption through 2030. The actual trajectory is likely to be a weighted combination of these, with weights determined by the five critical factors enumerated above. We present these as forecasting heuristics for organizational decision-makers, regulators, and educators, and identify observable signposts that distinguish them over the 2026--2028 window.
 
 \textbf{Scenario A --- Stratified coexistence (most likely).} Vibe coding establishes durable dominance in non-critical and exploratory contexts; vibe engineering becomes the professional standard for departmental and customer-facing applications; traditional development persists for safety-critical systems. Governance frameworks mature into industry-specific norms similar to current cybersecurity-control standards. The 87\% Fortune-500 adoption figure stabilises near 95\%, but with high variance in maturity. Observable signposts: industry bodies (e.g., NIST, ISO, sector regulators) publish vibe-coding governance guidance; major insurance carriers price AI-generated code risk; enterprise vendors release first-generation vibe-coding compliance tooling.
 
@@ -651,13 +668,43 @@ Several limitations must be acknowledged. First, the 12-month temporal scope cap
 
 \subsection{Future Research Agenda}
 
-This study opens several avenues: (1)~longitudinal case studies tracking resilience outcomes over time; (2)~quantitative survey research testing our TOE model; (3)~sector-specific deep dives in regulated industries; (4)~environmental impact quantification of AI-assisted vs.\ traditional development; (5)~focused investigation of the ``vulnerable developer'' phenomenon; (6)~governance framework validation through action research; (7)~comparative international studies across regulatory and cultural contexts; (8)~policy and regulatory analysis examining liability allocation for AI-generated code in regulated industries; and (9)~macroeconomic-impact forecasting estimating productivity, GDP, and labour-market effects of widespread vibe coding adoption, in keeping with the foresight tradition of this journal.
+This study opens several avenues: (1)~longitudinal case studies tracking resilience outcomes over time; (2)~quantitative survey research testing our TOE model; (3)~sector-specific deep dives in regulated industries; (4)~environmental impact quantification of AI-assisted vs.\ traditional development; (5)~focused investigation of the ``vulnerable developer'' phenomenon; (6)~governance framework validation through action research; (7)~comparative international studies across regulatory and cultural contexts; (8)~policy and regulatory analysis examining liability allocation for AI-generated code in regulated industries; and (9)~business-model and macroeconomic-impact analysis estimating productivity, value-capture, and labour-market effects of widespread vibe coding adoption.
 
 As vibe coding continues its rapid diffusion, the resilience paradox identified in this study underscores the urgency: vibe coding's extraordinary potential to accelerate digital transformation is matched by its capacity to introduce new fragilities. Organizations, policymakers, and researchers must engage critically with both dimensions to ensure this paradigm shift contributes to sustainable digital resilience rather than the accumulation of hidden digital risk.
 
 
 %% ====================================================================
-%% References
+%% Declarations (per Digital Business author guide)
+%% ====================================================================
+
+\section*{CRediT authorship contribution statement}
+\addcontentsline{toc}{section}{CRediT authorship contribution statement}
+
+\textbf{Abdulhakeem Ibrahim:} Conceptualization, Methodology, Investigation, Formal analysis, Data curation, Writing -- original draft, Writing -- review \& editing, Visualization, Project administration.
+\textbf{Hongji Yang:} Conceptualization, Methodology, Validation, Writing -- review \& editing, Supervision.
+
+\section*{Declaration of competing interest}
+\addcontentsline{toc}{section}{Declaration of competing interest}
+
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+\section*{Funding}
+\addcontentsline{toc}{section}{Funding}
+
+This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
+
+\section*{Data availability}
+\addcontentsline{toc}{section}{Data availability}
+
+The corpus of 97 sources analysed in this study is composed of publicly available academic literature, industry reports, developer community discourse, and platform documentation. A list of included sources, the hierarchical coding framework, and AACODS quality-assessment scores are available from the corresponding author on reasonable request. No new primary data were generated.
+
+\section*{Declaration of generative AI and AI-assisted technologies in the manuscript preparation process}
+\addcontentsline{toc}{section}{Declaration of generative AI and AI-assisted technologies in the manuscript preparation process}
+
+During the preparation of this work the authors used large language model (LLM)-based AI assistants to support drafting, copy-editing, and reference checking. After using these tools, the authors reviewed and edited the content as needed and take full responsibility for the content of the published article. No generative AI was used to create or alter figures or to generate research data; the directed content analysis, coding, intercoder-reliability calculation, and theoretical synthesis were conducted by the authors.
+
+%% ====================================================================
+%% References (Digital Business: APA 7 / author--year)
 %% ====================================================================
 \bibliographystyle{elsarticle-harv}
 \bibliography{references}
