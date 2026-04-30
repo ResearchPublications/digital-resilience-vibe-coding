@@ -1,4 +1,4 @@
-\begin{thebibliography}{67}
+\begin{thebibliography}{94}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -17,6 +17,61 @@
 \newblock \bibinfo{title}{Vibe Coding and the Future of Enterprise
   Development}.
 \newblock \bibinfo{type}{Technical Report}. Atos Digital Transformation Report.
+%Type = Misc
+\bibitem[{Beck et~al.(2001)Beck, Beedle, {van Bennekum}, Cockburn, Cunningham,
+  Fowler, Grenning, Highsmith, Hunt, Jeffries, Kern, Marick, Martin, Mellor,
+  Schwaber, Sutherland and Thomas}]{AgileManifesto2001}
+\bibinfo{author}{Beck, K.}, \bibinfo{author}{Beedle, M.}, \bibinfo{author}{{van
+  Bennekum}, A.}, \bibinfo{author}{Cockburn, A.}, \bibinfo{author}{Cunningham,
+  W.}, \bibinfo{author}{Fowler, M.}, \bibinfo{author}{Grenning, J.},
+  \bibinfo{author}{Highsmith, J.}, \bibinfo{author}{Hunt, A.},
+  \bibinfo{author}{Jeffries, R.}, \bibinfo{author}{Kern, J.},
+  \bibinfo{author}{Marick, B.}, \bibinfo{author}{Martin, R.C.},
+  \bibinfo{author}{Mellor, S.}, \bibinfo{author}{Schwaber, K.},
+  \bibinfo{author}{Sutherland, J.}, \bibinfo{author}{Thomas, D.},
+  \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{Manifesto for agile software development}.
+\newblock \bibinfo{howpublished}{\url{https://agilemanifesto.org}}.
+%Type = Article
+\bibitem[{Beynon-Davies et~al.(1999)Beynon-Davies, Carne, Mackay and
+  Tudhope}]{Beynon1999}
+\bibinfo{author}{Beynon-Davies, P.}, \bibinfo{author}{Carne, C.},
+  \bibinfo{author}{Mackay, H.}, \bibinfo{author}{Tudhope, D.},
+  \bibinfo{year}{1999}.
+\newblock \bibinfo{title}{Rapid application development ({RAD}): An empirical
+  review}.
+\newblock \bibinfo{journal}{European Journal of Information Systems}
+  \bibinfo{volume}{8}, \bibinfo{pages}{211--223}.
+\newblock \DOIprefix\doi{10.1057/palgrave.ejis.3000325}.
+%Type = Article
+\bibitem[{Bird et~al.(2023)Bird, Ford, Zimmermann, Forsgren, Kalliamvakou,
+  Lowdermilk and Gazit}]{Bird2023}
+\bibinfo{author}{Bird, C.}, \bibinfo{author}{Ford, D.},
+  \bibinfo{author}{Zimmermann, T.}, \bibinfo{author}{Forsgren, N.},
+  \bibinfo{author}{Kalliamvakou, E.}, \bibinfo{author}{Lowdermilk, T.},
+  \bibinfo{author}{Gazit, I.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Taking flight with {Copilot}}.
+\newblock \bibinfo{journal}{Communications of the ACM} \bibinfo{volume}{66},
+  \bibinfo{pages}{56--62}.
+\newblock \DOIprefix\doi{10.1145/3589996}.
+%Type = Article
+\bibitem[{Bock and Frank(2021)}]{Bock2021}
+\bibinfo{author}{Bock, A.C.}, \bibinfo{author}{Frank, U.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{In search of the essence of low-code: An exploratory
+  study of seven development platforms}.
+\newblock \bibinfo{journal}{Business \& Information Systems Engineering}
+  \bibinfo{volume}{63}, \bibinfo{pages}{733--740}.
+\newblock \DOIprefix\doi{10.1007/s12599-021-00724-w}.
+%Type = Article
+\bibitem[{Boh et~al.(2022)Boh, Constantinides, Padmanabhan and
+  Viswanathan}]{Boh2022}
+\bibinfo{author}{Boh, W.F.}, \bibinfo{author}{Constantinides, P.},
+  \bibinfo{author}{Padmanabhan, B.}, \bibinfo{author}{Viswanathan, S.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Building digital-first capabilities for
+  organizational transformation}.
+\newblock \bibinfo{journal}{MIS Quarterly} \bibinfo{volume}{46}.
 %Type = Techreport
 \bibitem[{{Boston Consulting Group}(2025)}]{BCG2025}
 \bibinfo{author}{{Boston Consulting Group}}, \bibinfo{year}{2025}.
@@ -55,6 +110,25 @@
   Two sides of the same coin?}
 \newblock \bibinfo{journal}{Software and Systems Modeling}
   \bibinfo{volume}{19}, \bibinfo{pages}{1--8}.
+%Type = Article
+\bibitem[{Campbell et~al.(2013)Campbell, Quincy, Osserman and
+  Pedersen}]{Campbell2013}
+\bibinfo{author}{Campbell, J.L.}, \bibinfo{author}{Quincy, C.},
+  \bibinfo{author}{Osserman, J.}, \bibinfo{author}{Pedersen, O.K.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Coding in-depth semistructured interviews: Problems
+  of unitization and intercoder reliability and agreement}.
+\newblock \bibinfo{journal}{Sociological Methods \& Research}
+  \bibinfo{volume}{42}, \bibinfo{pages}{294--320}.
+\newblock \DOIprefix\doi{10.1177/0049124113500475}.
+%Type = Article
+\bibitem[{Christensen et~al.(2015)Christensen, Raynor and
+  McDonald}]{Christensen2015}
+\bibinfo{author}{Christensen, C.M.}, \bibinfo{author}{Raynor, M.E.},
+  \bibinfo{author}{McDonald, R.}, \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{What is disruptive innovation?}
+\newblock \bibinfo{journal}{Harvard Business Review} \bibinfo{volume}{93},
+  \bibinfo{pages}{44--53}.
 %Type = Techreport
 \bibitem[{Clancy(2014)}]{Clancy2014}
 \bibinfo{author}{Clancy, T.}, \bibinfo{year}{2014}.
@@ -91,6 +165,14 @@
 \newblock \bibinfo{title}{Vibe coding in practice: A grey literature review}.
 \newblock \bibinfo{journal}{arXiv preprint arXiv:2510.00328}
   \bibinfo{note}{Accepted at ICSE 2026 SEIP Track}.
+%Type = Book
+\bibitem[{Forsgren et~al.(2018)Forsgren, Humble and Kim}]{Forsgren2018}
+\bibinfo{author}{Forsgren, N.}, \bibinfo{author}{Humble, J.},
+  \bibinfo{author}{Kim, G.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Accelerate: The Science of Lean Software and
+  {DevOps}}.
+\newblock \bibinfo{publisher}{IT Revolution Press}, \bibinfo{address}{Portland,
+  OR}.
 %Type = Article
 \bibitem[{Fryling(2019)}]{Fryling2019}
 \bibinfo{author}{Fryling, M.}, \bibinfo{year}{2019}.
@@ -125,13 +207,24 @@
 \newblock \bibinfo{title}{Navigating the Vibe Coding Revolution: Enterprise
   Readiness Assessment}.
 \newblock \bibinfo{type}{Technical Report}. Genpact Insights.
-%Type = Book
-\bibitem[{Glover and Dudley(1991)}]{Glover1991}
-\bibinfo{author}{Glover, N.}, \bibinfo{author}{Dudley, T.},
-  \bibinfo{year}{1991}.
-\newblock \bibinfo{title}{Practical Error Correction Design for Engineers}.
-\newblock \bibinfo{publisher}{Data Systems Technology Corporation},
-  \bibinfo{address}{Reston, VA}.
+%Type = Techreport
+\bibitem[{{GitHub}(2025)}]{GitHub2025}
+\bibinfo{author}{{GitHub}}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Octoverse 2025: The State of {AI} in Software
+  Development}.
+\newblock \bibinfo{type}{Technical Report}. GitHub Blog.
+%Type = Article
+\bibitem[{Hanelt et~al.(2021)Hanelt, Bohnsack, Marz and
+  Antunes~Marante}]{Hanelt2021}
+\bibinfo{author}{Hanelt, A.}, \bibinfo{author}{Bohnsack, R.},
+  \bibinfo{author}{Marz, D.}, \bibinfo{author}{Antunes~Marante, C.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{A systematic review of the literature on digital
+  transformation: Insights and implications for strategy and organizational
+  change}.
+\newblock \bibinfo{journal}{Journal of Management Studies}
+  \bibinfo{volume}{58}, \bibinfo{pages}{1159--1197}.
+\newblock \DOIprefix\doi{10.1111/joms.12639}.
 %Type = Techreport
 \bibitem[{{HCLTech}(2025)}]{HCLTech2025}
 \bibinfo{author}{{HCLTech}}, \bibinfo{year}{2025}.
@@ -146,6 +239,15 @@
   and resilience: A developing country field study}.
 \newblock \bibinfo{journal}{Information Systems Journal} \bibinfo{volume}{29},
   \bibinfo{pages}{70--96}.
+%Type = Article
+\bibitem[{Hess et~al.(2016)Hess, Matt, Benlian and Wiesb{\"o}ck}]{Hess2016}
+\bibinfo{author}{Hess, T.}, \bibinfo{author}{Matt, C.},
+  \bibinfo{author}{Benlian, A.}, \bibinfo{author}{Wiesb{\"o}ck, F.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Options for formulating a digital transformation
+  strategy}.
+\newblock \bibinfo{journal}{MIS Quarterly Executive} \bibinfo{volume}{15},
+  \bibinfo{pages}{123--139}.
 %Type = Article
 \bibitem[{Holling(1973)}]{Holling1973}
 \bibinfo{author}{Holling, C.S.}, \bibinfo{year}{1973}.
@@ -167,6 +269,23 @@
 \newblock \bibinfo{journal}{Communications of the ACM} \bibinfo{volume}{35},
   \bibinfo{pages}{45--55}.
 \newblock \DOIprefix\doi{10.1145/129617.129619}.
+%Type = Book
+\bibitem[{Humble and Farley(2010)}]{Humble2010}
+\bibinfo{author}{Humble, J.}, \bibinfo{author}{Farley, D.},
+  \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Continuous Delivery: Reliable Software Releases
+  through Build, Test, and Deployment Automation}.
+\newblock \bibinfo{publisher}{Addison-Wesley}, \bibinfo{address}{Boston, MA}.
+%Type = Inproceedings
+\bibitem[{Hutchinson et~al.(2011)Hutchinson, Whittle, Rouncefield and
+  Kristoffersen}]{Hutchinson2011}
+\bibinfo{author}{Hutchinson, J.}, \bibinfo{author}{Whittle, J.},
+  \bibinfo{author}{Rouncefield, M.}, \bibinfo{author}{Kristoffersen, S.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Empirical assessment of {MDE} in industry}, in:
+  \bibinfo{booktitle}{Proceedings of the 33rd International Conference on
+  Software Engineering ({ICSE})}, pp. \bibinfo{pages}{471--480}.
+\newblock \DOIprefix\doi{10.1145/1985793.1985858}.
 %Type = Article
 \bibitem[{Iivari(1996)}]{Iivari1996}
 \bibinfo{author}{Iivari, J.}, \bibinfo{year}{1996}.
@@ -227,6 +346,11 @@
   \bibinfo{volume}{72}, \bibinfo{pages}{271--280}.
 \newblock \DOIprefix\doi{10.1016/S0164-1212(03)00155-2}.
 %Type = Book
+\bibitem[{Martin(1991)}]{Martin1991}
+\bibinfo{author}{Martin, J.}, \bibinfo{year}{1991}.
+\newblock \bibinfo{title}{Rapid Application Development}.
+\newblock \bibinfo{publisher}{Macmillan}, \bibinfo{address}{New York}.
+%Type = Book
 \bibitem[{Mayring(2014)}]{Mayring2014}
 \bibinfo{author}{Mayring, P.}, \bibinfo{year}{2014}.
 \newblock \bibinfo{title}{Qualitative Content Analysis: Theoretical Foundation,
@@ -244,6 +368,15 @@
 \newblock \bibinfo{title}{The State of {AI}: How Organizations Are Rewiring to
   Capture Value}.
 \newblock \bibinfo{type}{Technical Report}. McKinsey Global Survey.
+%Type = Article
+\bibitem[{Mergel et~al.(2019)Mergel, Edelmann and Haug}]{Mergel2019}
+\bibinfo{author}{Mergel, I.}, \bibinfo{author}{Edelmann, N.},
+  \bibinfo{author}{Haug, N.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Defining digital transformation: Results from expert
+  interviews}.
+\newblock \bibinfo{journal}{Government Information Quarterly}
+  \bibinfo{volume}{36}, \bibinfo{pages}{101385}.
+\newblock \DOIprefix\doi{10.1016/j.giq.2019.06.002}.
 %Type = Book
 \bibitem[{Moore(2014)}]{Moore2014}
 \bibinfo{author}{Moore, G.A.}, \bibinfo{year}{2014}.
@@ -252,12 +385,27 @@
 \newblock \bibinfo{edition}{3rd} ed., \bibinfo{publisher}{Harper Business},
   \bibinfo{address}{New York}.
 %Type = Article
+\bibitem[{Murphy et~al.(2006)Murphy, Kersten and Findlater}]{Murphy2006}
+\bibinfo{author}{Murphy, G.C.}, \bibinfo{author}{Kersten, M.},
+  \bibinfo{author}{Findlater, L.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{How are {Java} software developers using the {Eclipse
+  IDE}?}
+\newblock \bibinfo{journal}{IEEE Software} \bibinfo{volume}{23},
+  \bibinfo{pages}{76--83}.
+\newblock \DOIprefix\doi{10.1109/MS.2006.105}.
+%Type = Article
 \bibitem[{Nicmanis(2024)}]{Nicmanis2024}
 \bibinfo{author}{Nicmanis, J.}, \bibinfo{year}{2024}.
 \newblock \bibinfo{title}{Reflexivity in qualitative content analysis: A guide
   for researchers}.
 \newblock \bibinfo{journal}{Qualitative Research} \bibinfo{volume}{24},
   \bibinfo{pages}{89--107}.
+%Type = Techreport
+\bibitem[{{Object Management Group}(2003)}]{OMG2003}
+\bibinfo{author}{{Object Management Group}}, \bibinfo{year}{2003}.
+\newblock \bibinfo{title}{{MDA Guide} Version 1.0.1}.
+\newblock \bibinfo{type}{Technical Report} \bibinfo{number}{omg/2003-06-01}.
+  OMG.
 %Type = Article
 \bibitem[{Orlikowski(1993)}]{Orlikowski1993}
 \bibinfo{author}{Orlikowski, W.J.}, \bibinfo{year}{1993}.
@@ -273,6 +421,26 @@
   for Disruption?}
 \newblock \bibinfo{type}{Technical Report}. OutSystems.
   \bibinfo{address}{Boston, MA}.
+%Type = Article
+\bibitem[{Page et~al.(2021)Page, McKenzie, Bossuyt, Boutron, Hoffmann, Mulrow,
+  Shamseer, Tetzlaff, Akl, Brennan et~al.}]{Page2021}
+\bibinfo{author}{Page, M.J.}, \bibinfo{author}{McKenzie, J.E.},
+  \bibinfo{author}{Bossuyt, P.M.}, \bibinfo{author}{Boutron, I.},
+  \bibinfo{author}{Hoffmann, T.C.}, \bibinfo{author}{Mulrow, C.D.},
+  \bibinfo{author}{Shamseer, L.}, \bibinfo{author}{Tetzlaff, J.M.},
+  \bibinfo{author}{Akl, E.A.}, \bibinfo{author}{Brennan, S.E.}, et~al.,
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{The {PRISMA} 2020 statement: An updated guideline for
+  reporting systematic reviews}.
+\newblock \bibinfo{journal}{BMJ} \bibinfo{volume}{372}, \bibinfo{pages}{n71}.
+\newblock \DOIprefix\doi{10.1136/bmj.n71}.
+%Type = Misc
+\bibitem[{Plekhanova(2009)}]{Plekhanova2009}
+\bibinfo{author}{Plekhanova, J.}, \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Evaluating web development frameworks: {Django},
+  {Ruby on Rails}, and {CakePHP}}.
+\newblock \bibinfo{note}{Institute for Business and Information Technology,
+  Temple University}.
 %Type = Book
 \bibitem[{Pressman and Maxim(2020)}]{Pressman2020}
 \bibinfo{author}{Pressman, R.S.}, \bibinfo{author}{Maxim, B.R.},
@@ -280,6 +448,13 @@
 \newblock \bibinfo{title}{Software Engineering: A Practitioner's Approach}.
 \newblock \bibinfo{edition}{9th} ed., \bibinfo{publisher}{McGraw-Hill},
   \bibinfo{address}{New York}.
+%Type = Inproceedings
+\bibitem[{Prinz et~al.(2021)Prinz, Rentrop and Huber}]{Prinz2021}
+\bibinfo{author}{Prinz, N.}, \bibinfo{author}{Rentrop, C.},
+  \bibinfo{author}{Huber, M.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Low-code development platforms---a literature
+  review}, in: \bibinfo{booktitle}{Proceedings of the 27th Americas Conference
+  on Information Systems ({AMCIS})}.
 %Type = Techreport
 \bibitem[{Richardson and Rymer(2014)}]{Richardson2014}
 \bibinfo{author}{Richardson, C.}, \bibinfo{author}{Rymer, J.R.},
@@ -302,6 +477,15 @@
 \newblock \bibinfo{title}{Diffusion of Innovations}.
 \newblock \bibinfo{edition}{5th} ed., \bibinfo{publisher}{Free Press},
   \bibinfo{address}{New York}.
+%Type = Article
+\bibitem[{Rohrbeck and Kum(2018)}]{Rohrbeck2018}
+\bibinfo{author}{Rohrbeck, R.}, \bibinfo{author}{Kum, M.E.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Corporate foresight and its impact on firm
+  performance: A longitudinal analysis}.
+\newblock \bibinfo{journal}{Technological Forecasting and Social Change}
+  \bibinfo{volume}{129}, \bibinfo{pages}{105--116}.
+\newblock \DOIprefix\doi{10.1016/j.techfore.2017.12.013}.
 %Type = Techreport
 \bibitem[{Rymer and Koplowitz(2019)}]{Rymer2019}
 \bibinfo{author}{Rymer, J.R.}, \bibinfo{author}{Koplowitz, R.},
@@ -320,6 +504,18 @@
   low-code development platforms}, in: \bibinfo{booktitle}{Proceedings of the
   46th Euromicro Conference on Software Engineering and Advanced Applications
   (SEAA)}, \bibinfo{organization}{IEEE}. pp. \bibinfo{pages}{171--178}.
+%Type = Book
+\bibitem[{Salda{\~n}a(2021)}]{Saldana2021}
+\bibinfo{author}{Salda{\~n}a, J.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{The Coding Manual for Qualitative Researchers}.
+\newblock \bibinfo{edition}{4th} ed., \bibinfo{publisher}{Sage},
+  \bibinfo{address}{Thousand Oaks, CA}.
+%Type = Book
+\bibitem[{Saldanha(2019)}]{Saldanha2019}
+\bibinfo{author}{Saldanha, T.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Why Digital Transformations Fail: The Surprising
+  Disciplines of How to Take Off and Stay Ahead}.
+\newblock \bibinfo{publisher}{Berrett-Koehler}, \bibinfo{address}{Oakland, CA}.
 %Type = Article
 \bibitem[{Sanchis et~al.(2020)Sanchis, Garc{\'\i}a-Perales, Fraile and
   Poler}]{Sanchis2020}
@@ -340,16 +536,49 @@
 \newblock \bibinfo{journal}{Sustainability} \bibinfo{volume}{11},
   \bibinfo{pages}{4327}.
 \newblock \DOIprefix\doi{10.3390/su11164327}.
+%Type = Article
+\bibitem[{Saunders et~al.(2018)Saunders, Sim, Kingstone, Baker, Waterfield,
+  Bartlam, Burroughs and Jinks}]{Saunders2018}
+\bibinfo{author}{Saunders, B.}, \bibinfo{author}{Sim, J.},
+  \bibinfo{author}{Kingstone, T.}, \bibinfo{author}{Baker, S.},
+  \bibinfo{author}{Waterfield, J.}, \bibinfo{author}{Bartlam, B.},
+  \bibinfo{author}{Burroughs, H.}, \bibinfo{author}{Jinks, C.},
+  \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Saturation in qualitative research: Exploring its
+  conceptualization and operationalization}.
+\newblock \bibinfo{journal}{Quality \& Quantity} \bibinfo{volume}{52},
+  \bibinfo{pages}{1893--1907}.
+\newblock \DOIprefix\doi{10.1007/s11135-017-0574-8}.
+%Type = Article
+\bibitem[{Schmidt(2006)}]{Schmidt2006}
+\bibinfo{author}{Schmidt, D.C.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Model-driven engineering}.
+\newblock \bibinfo{journal}{IEEE Computer} \bibinfo{volume}{39},
+  \bibinfo{pages}{25--31}.
+\newblock \DOIprefix\doi{10.1109/MC.2006.58}.
 %Type = Techreport
 \bibitem[{Shmargad(2025)}]{Shmargad2025}
 \bibinfo{author}{Shmargad, J.}, \bibinfo{year}{2025}.
 \newblock \bibinfo{title}{Vibe Coding Comes to the Enterprise}.
 \newblock \bibinfo{type}{Technical Report}. Forrester Research.
+%Type = Book
+\bibitem[{Sommerville(1996)}]{Sommerville1996}
+\bibinfo{author}{Sommerville, I.}, \bibinfo{year}{1996}.
+\newblock \bibinfo{title}{Software Engineering}.
+\newblock \bibinfo{edition}{5th} ed., \bibinfo{publisher}{Addison-Wesley}.
 %Type = Techreport
 \bibitem[{{Stack Overflow}(2025)}]{StackOverflow2025}
 \bibinfo{author}{{Stack Overflow}}, \bibinfo{year}{2025}.
 \newblock \bibinfo{title}{2025 Developer Survey Results}.
 \newblock \bibinfo{type}{Technical Report}. Stack Overflow.
+%Type = Inproceedings
+\bibitem[{Storey et~al.(2005)Storey, {\v C}ubrani{\'c} and German}]{Storey2005}
+\bibinfo{author}{Storey, M.A.D.}, \bibinfo{author}{{\v C}ubrani{\'c}, D.},
+  \bibinfo{author}{German, D.M.}, \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{On the use of visualization to support awareness of
+  human activities in software development: A survey and a framework}, in:
+  \bibinfo{booktitle}{Proceedings of the 2005 ACM Symposium on Software
+  Visualization}, pp. \bibinfo{pages}{193--202}.
 %Type = Inproceedings
 \bibitem[{Strubell et~al.(2019)Strubell, Ganesh and McCallum}]{Strubell2019}
 \bibinfo{author}{Strubell, E.}, \bibinfo{author}{Ganesh, A.},
@@ -434,6 +663,18 @@
 \newblock \bibinfo{title}{State of Software Security: The Rise of
   {AI}-Generated Code}.
 \newblock \bibinfo{type}{Annual Report}. Veracode.
+%Type = Article
+\bibitem[{Verhoef et~al.(2021)Verhoef, Broekhuizen, Bart, Bhattacharya, Dong,
+  Fabian and Haenlein}]{Verhoef2021}
+\bibinfo{author}{Verhoef, P.C.}, \bibinfo{author}{Broekhuizen, T.},
+  \bibinfo{author}{Bart, Y.}, \bibinfo{author}{Bhattacharya, A.},
+  \bibinfo{author}{Dong, J.Q.}, \bibinfo{author}{Fabian, N.},
+  \bibinfo{author}{Haenlein, M.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Digital transformation: A multidisciplinary
+  reflection and research agenda}.
+\newblock \bibinfo{journal}{Journal of Business Research}
+  \bibinfo{volume}{122}, \bibinfo{pages}{889--901}.
+\newblock \DOIprefix\doi{10.1016/j.jbusres.2019.09.022}.
 %Type = Article
 \bibitem[{Vial(2019)}]{Vial2019}
 \bibinfo{author}{Vial, G.}, \bibinfo{year}{2019}.
